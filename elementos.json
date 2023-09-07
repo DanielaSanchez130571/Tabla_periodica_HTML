@@ -272,7 +272,7 @@
         "info":{
             "advertencia":"",
             "descripción":"El Elemento HTML Anchor <a> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.",
-            "ejemplo":"<a href='mailto:nowhere@mozilla.org'>Enviar correo a nowhere</a>",
+            "ejemplo":"<a href='mailto:nowhere@mozilla.org'> Enviar correo a nowhere</a>",
             "interfazDOM":"La interfaz HTMLAnchorElement representa elementos de hipervínculo y proporciona propiedades y métodos especiales (más allá de los de la interfaz de objeto HTMLElement regular de la que heredan) para manipular el diseño y la presentación de dichos elementos.",
             "URL":"https://developer.mozilla.org/es/docs/Web/HTML/Element/a"
         },
