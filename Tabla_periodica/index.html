@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    
+    <nav class="navBar">
+        <h1 class="titulo">TABLA PERIÓDICA</h1>
+        <h1 class="titulo">ELEMENTOS HTML</h1>
+    </nav>
     <!-- <div id="app"></div>
     <script type="module" src="/src/main.js"></script> -->
     <div class="wrapper">
@@ -1573,6 +1578,9 @@
         </div>
     </div>
     
+    <footer class="footer">
+        <p>&copy; 2023 Team 4 | Kuepa | TechPower</p>
+    </footer>
 </body>
 
 </html>
@@ -1595,10 +1603,33 @@
         --color-morado-nude: #B08D91;
         --color-gris: #D9D9D9;
         --color-negro: #0F0B0B;
-        --color-blanco: #CFCFCF;
+        --color-blanco: #fdfdfd;
     }
     
-    
+    body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    }
+
+    .navBar {
+    background-color: var(--color-negro); 
+    color: var(--color-blanco);
+    width: 100%; 
+    padding: 10px 0;
+    text-align: center; 
+    }
+
+    .footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 10px;
+    text-align: center;
+    bottom: 0; 
+    width: 100%;
+    }
 
     .documento{
         background-color:var(--color-azul-claro)
