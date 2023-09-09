@@ -8,13 +8,13 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    
-    <nav class="navBar">
+<nav class="navBar">
         <h1 class="titulo">TABLA PERIÓDICA</h1>
         <h1 class="titulo">ELEMENTOS HTML</h1>
-    </nav>
+</nav>
+<body >
+    
+    
     <!-- <div id="app"></div>
     <script type="module" src="/src/main.js"></script> -->
     <div class="wrapper">
@@ -39,7 +39,7 @@
         <input class="categorias-t" type="radio" id="unknown" name="categories" />
         <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
 
-        <div class="periodic-table">
+        <div class="periodic-table" >
             <!-- col 1 -->
             <div class="element other-nonmetal c1 r1">
                 <input class="activate" type="radio" name="elements" />
@@ -1608,9 +1608,15 @@
 
     @font-face {
     font-family: 'Nexarut';
-    src: url('/Tabla_periodica/src/assets/tipografias/NexaRustScriptB-Trial-Shadow.woff') format('truetype'); 
+    src: url('/Tabla_periodica/src/assets/tipografias/NexaRustSlab-Trial-Shadow.ttf') format('truetype'); 
     }
     
+    @media (min-width: 1200px) {
+    h1 {
+    font-size: 4rem;}
+    
+}
+
     body {
     margin: 0;
     padding: 0;
@@ -1741,9 +1747,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition-property: transform, z-index, left, right, top, bottom;
-        transition-duration: 100ms, 0ms, 200ms, 200ms, 200ms, 200ms;
-        transition-delay: 0ms, 100ms, 0ms, 0ms, 0ms, 0ms;
+        
     }
 
     .element .atomic-number {
@@ -1752,7 +1756,6 @@
 
     .element .label {
         text-align: center;
-        transition: 200ms;
     }
 
     .element .symbol {
@@ -1760,108 +1763,13 @@
     }
 
     .element .name {
-        font-size: 0.7vw;
-    }
-/* 
-    .element .atomic-mass {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 2px;
-        text-align: center;
+        font-size: 0.8vw;
     }
 
-    .element .atomic-weight {
-        position: absolute;
-        right: 0;
-        top: 0;
-        list-style: none;
-        margin: 0;
-        padding: 2px;
-        opacity: 0;
-        transition: 200ms;
-        text-align: right;
-    }
-
-    .element .model {
-        display: none;
-        position: absolute;
-        left: -500%;
-        right: -500%;
-        top: -500%;
-        bottom: -500%;
-        transform: scale(0.1);
-    }
-
-    .element .model .orbital {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        border: 5px solid;
-        border-radius: 50%;
-        opacity: 0.25;
-    }
-
-    .element .model .orbital:nth-child(1) {
-        margin: 10%;
-        animation-duration: 40s;
-    }
-
-    .element .model .orbital:nth-child(2) {
-        margin: 15.5%;
-        animation-duration: 34s;
-    }
-
-    .element .model .orbital:nth-child(3) {
-        margin: 21%;
-        animation-duration: 28s;
-    }
-
-    .element .model .orbital:nth-child(4) {
-        margin: 26.5%;
-        animation-duration: 22s;
-    }
-
-    .element .model .orbital:nth-child(5) {
-        margin: 32%;
-        animation-duration: 16s;
-    }
-
-    .element .model .orbital:nth-child(6) {
-        margin: 37.5%;
-        animation-duration: 10s;
-    }
-
-    .element .model .orbital:nth-child(7) {
-        margin: 43%;
-        animation-duration: 4s;
-    }
-
-    .element .model .orbital .electron {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
-
-    .element .model .orbital .electron::before {
-        content: "";
-        position: absolute;
-        left: calc(50% - 0.7vw);
-        top: -0.7vw;
-        width: 1.4vw;
-        height: 1.4vw;
-        background-color: currentColor;
-        border-radius: 50%;
-        opacity: 0.75;
-    }
- */
     .element input[type="radio"] {
-        position: absolute;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         z-index: 2;
         left: 0;
         top: 0;
