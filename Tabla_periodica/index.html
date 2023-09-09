@@ -1763,7 +1763,7 @@
     }
 
     .element .name {
-        font-size: 1vw;
+        font-size: 0.7vw;
     }
 
     .element input[type="radio"] {
@@ -1804,10 +1804,10 @@
         cursor: auto;
     }
 
-    .element input[type="radio"].activate:checked~.square .label {
+    /* .element input[type="radio"].activate:checked~.square .label {
         transition-duration: 500ms;
         transform: scale(0.75);
-    }
+    } */
 
     .element input[type="radio"].activate:checked~.square .atomic-weight {
         opacity: 1;
@@ -1882,49 +1882,8 @@
         opacity: 0.2;
     }
 
-
-    .alkali-metal {
-        color: #ecbe59;
-    }
-
-    .alkaline-earth-metal {
-        color: #dee955;
-    }
-
-    .lanthanoid {
-        color: #ec77a3;
-    }
-
-    .actinoid {
-        color: #c686cc;
-    }
-
-    .transition-metal {
-        color: #fd8572;
-    }
-
-    .post-transition-metal {
-        color: #4cddf3;
-    }
-
-    .metalloid {
-        color: #3aefb6;
-    }
-
-    .other-nonmetal {
-        color: #52ee61;
-    }
-
-    .noble-gas {
-        color: #759fff;
-    }
-
-    .unknown {
-        color: #cccccc;
-    }
-
-
-    .r1 {
+    @media screen and (min-width: 1024px) {
+        .r1 {
         grid-row: 1;
     }
 
@@ -2032,9 +1991,6 @@
         grid-column: 17;
     }
 
-    .c18 {
-        grid-column: 18;
-    }
 
     .r1 input[type="radio"].activate:checked~.square {
         top: 100%;
@@ -2048,9 +2004,116 @@
         left: 100%;
     }
 
-    .c18 input[type="radio"].activate:checked~.square {
+    .c17 input[type="radio"].activate:checked~.square {
         left: -100%;
     }
+}
+
+@media screen and (max-width: 1023px) {
+    .element {
+        grid-column-start: 1;
+        grid-column-end: 17;
+    }
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+        padding: 2%;
+        width: 85%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .wrapper>input {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .periodic-table {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(17, 1fr);
+    }
+
+    .element {
+        position: relative;
+        font-size: 0.5vw;
+        padding-bottom: 100%;
+        cursor: pointer;
+        color: #fff;
+        transition: 500ms;
+    }
+
+    .element .overlay {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #101318;
+        opacity: 0;
+        pointer-events: none;
+        transition: 500ms;
+    }
+
+    .element .square {
+        position: absolute;
+        left: 10%;
+        top: 0;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #0F0B0B;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .element .atomic-number {
+        position: center;
+        font-size: 5vw;
+    }
+
+    .element .label {
+        text-align: center;
+    }
+
+    .element .symbol {
+        font-size: 20vw;
+    }
+
+    .element .name {
+        font-size: 5vw;
+    }
+
+    .r1 input[type="radio"].activate:checked~.square {
+        top: 80%;
+    }
+
+    .r10 input[type="radio"].activate:checked~.square {
+        top: -80%;
+    }
+
+    .c1 input[type="radio"].activate:checked~.square {
+        left: 80%;
+    }
+
+    .c17 input[type="radio"].activate:checked~.square {
+        left: -80%;
+    } 
+
+   
+}
+   
 
     @keyframes rotate {
         from {
