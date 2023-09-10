@@ -1573,20 +1573,20 @@
  
     <div class="key wrapper">
         <div class="row">
-            <label class="docuemntoC" for="documentosC">Documento</label>
-            <label class="metadatoC" for="metadatosC">Metadatos</label>
-            <label class="listaC" for="listasC">Listas</label>
-            <label class="agrupacionC" for="agrupacionesC">Agrupación</label>
-            <label class="textualC" for="textualesC">Textual</label>
-            <label class="multimedicaC" for="multimedicasC">Multimedia</label>
-            <label class="tablaC" for="tablasC">Tablas</label>
-            <label class="formularioC" for="formulariosC">Formulario</label>
-            <label class="scriptingC" for="scriptingsC">Scripting</label>
-            <label class="interactivaC" for="interactivasC">Interactivas</label>
-            <label class="semanticaC" for="semanticasC">Semánticas</label>
-            <label class="ideograficaC" for="ideograficasC">Ideográficas</label>
-            <label class="edicionC" for="edicionesC">Edición</label>
-            <label class="obsoletaC" for="obsoletasC">Obsoletas</label>
+            <label class="docuemntoC categorias" for="documentosC">Documento</label>
+            <label class="metadatoC categorias" for="metadatosC">Metadatos</label>
+            <label class="listaC categorias" for="listasC">Listas</label>
+            <label class="agrupacionC categorias" for="agrupacionesC">Agrupación</label>
+            <label class="textualC categorias" for="textualesC">Textual</label>
+            <label class="multimedicaC categorias" for="multimedicasC">Multimedia</label>
+            <label class="tablaC categorias" for="tablasC">Tablas</label>
+            <label class="formularioC categorias" for="formulariosC">Formulario</label>
+            <label class="scriptingC categorias" for="scriptingsC">Scripting</label>
+            <label class="interactivaC categorias" for="interactivasC">Interactivas</label>
+            <label class="semanticaC categorias" for="semanticasC">Semánticas</label>
+            <label class="ideograficaC categorias" for="ideograficasC">Ideográficas</label>
+            <label class="edicionC categorias" for="edicionesC">Edición</label>
+            <label class="obsoletaC categorias" for="obsoletasC">Obsoletas</label>
         </div>
     </div>
     
@@ -2202,6 +2202,12 @@
 
     .key .row label:hover {
         opacity: 1 !important;
+    }
+
+    .categorias{
+        background-color: var(--color-gris);
+        padding: 10px;
+        border-radius: 10px;
     }
 
     #documentosC:checked~.periodic-table .element:not(.documentoC),
