@@ -10,7 +10,16 @@
 </head>
 <nav class="navBar">
         <h1 class="titulo">TABLA PERIÓDICA</h1>
-        <h1 class="titulo">ELEMENTOS HTML</h1>
+        <h1 class="titulo">
+            <span class="eTitulo">E</span>
+            <span class="lTitulo">L</span>
+            <span class="eTitulo2">E</span> 
+            <span class="mTitulo">M</span>
+            <span class="eTitulo3">E</span>
+            <span class="nTitulo">N</span>
+            <span class="tTitulo">T</span>
+            <span class="oTitulo">O</span>
+            <span class="sTitulo">S</span> HTML</h1>
 </nav>
 <body >
     
@@ -1646,6 +1655,16 @@
     font-family: 'Nexarut', sans-serif;
     }
 
+    .eTitulo{color: var(--color-azul-claro);}
+    .lTitulo{color: var(--color-azul-rey);}
+    .eTitulo2{color: var(--color-fucsia);}
+    .mTitulo{color: var(--color-rosa-mexicano);}
+    .eTitulo3{color: var(--color-salmon);}
+    .nTitulo{color: var(--color-naranja);}
+    .tTitulo{color: var(--color-verde-limon);}
+    .oTitulo{color: var(--color-azul-verde);}
+    .sTitulo{color: var(--color-verde);}
+
     .footer {
     background-color: var(--color-negro);
     color: var(--color-blanco);
@@ -2210,6 +2229,56 @@
         border-radius: 10px;
     }
 
+    .docuemntoC:hover{
+        background-color: var(--color-azul-claro);
+    }
+
+    .metadatoC:hover{
+        background-color: var(--color-azul-rey);
+    }
+
+    .listaC:hover{
+        background-color: var(--color-rosa-morado);
+    }
+
+    .agrupacionC:hover{
+        background-color: var(--color-fucsia);
+    }
+
+    .textualC:hover{
+        background-color: var(--color-rosa-mexicano);
+    }
+    .multimedicaC:hover{
+        background-color: var(--color-salmon);
+    }
+    .tablaC:hover{
+        background-color: var(--color-naranja);
+    }
+    .formularioC:hover{
+        background-color: var(--color-verde-limon);
+    }
+    .scriptingC:hover{
+        background-color: var(--color-verde);
+    }
+    .interactivaC:hover{
+        background-color: var(--color-azul-verde);
+    }
+    .semanticaC:hover{
+        background-color: var(--color-amarillo-naranja);
+    }
+    .ideograficaC:hover{
+        background-color: var(--color-marron);
+    }
+    .edicionC:hover{
+        background-color: var(--color-nude);
+    }
+    .obsoletaC:hover{
+        background-color: var(--color-morado-nude);
+    }
+
+
+
+
     #documentosC:checked~.periodic-table .element:not(.documentoC),
     #documentosC:checked~.periodic-table .placeholder,
     #metadatosC:checked~.periodic-table .element:not(.metadatoC),
@@ -2242,9 +2311,6 @@
         pointer-events: none;
     }
 
-    .categorias-t:not(#lanthanoids):not(#actinoids):checked~.periodic-table .gap {
-        opacity: 0.5;
-    }
 
     .categorias-t:checked~.categorias-cancel {
         visibility: visible;
