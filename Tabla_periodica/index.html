@@ -633,7 +633,7 @@
                 </div>
             </div>
             <!-- col 8 -->
-            <div class="element transition-metal c8 r4">
+            <div class="element textualC c8 r4">
                 <input class="activate" type="radio" name="elements" />
                 <input class="deactivate" type="radio" name="elements" />
                 <div class="overlay"></div>
@@ -1598,9 +1598,13 @@
             <label class="obsoletaC categorias" for="obsoletasC">Obsoletas</label>
         </div>
     </div>
+
+    <div class="wrapper">
+        <h3>Saber mas sobre HTML</h3>
+    </div>
     
     <footer class="footer">
-        <p>&copy; 2023 Team 4 | Kuepa | TechPower</p>
+        <p>&copy; 2023 | Kuepa | TechPower</p>
     </footer>
 </body>
 
@@ -2311,6 +2315,23 @@
         pointer-events: none;
     }
 
+
+    #documentosC:checked~.periodic-table .key label:not(.documentoC),
+    #metadatosC:checked~.periodic-table .key label:not(.metadatoC),
+    #listasC:checked~.periodic-table .key label:not(.listaC),
+    #agrupacionesC:checked~.periodic-table .key label:not(.agrupacionC),
+    #textualesC:checked~.periodic-table .key label:not(.textualC),
+    #multimedicasC:checked~.periodic-table .key label:not(.multimedicaC),
+    #tablasC:checked~.periodic-table .key  label:not(.tablaC),
+    #formulariosC:checked~.periodic-table .key label:not(.formularioC),
+    #scriptingsC:checked~.periodic-table .key label:not(.scriptingC),
+    #interactivasC:checked~.periodic-table .key label:not(.interactivaC),
+    #semanticasC:checked~.periodic-table .key label:not(.semanticaC), 
+    #ideograficasC:checked~.periodic-table .key label:not(.ideograficaC),
+    #edicionesC:checked~.periodic-table .key label:not(.edicioneC),
+    #obsoletasC:checked~.periodic-table .key label:not(.obsoletaC) {
+        opacity: 0.65;
+    }
 
     .categorias-t:checked~.categorias-cancel {
         visibility: visible;
