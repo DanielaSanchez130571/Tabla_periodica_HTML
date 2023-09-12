@@ -30,7 +30,7 @@
 
 }
 
-body {
+.body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -179,7 +179,7 @@ body {
     font-size: 0.5vw;
     padding-bottom: 100%;
     cursor: pointer;
-    color: #fff;
+    color: var(--color-blanco);
     transition: 500ms;
 }
 
@@ -190,7 +190,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #101318;
+    background-color: var(--color-negro);
     opacity: 0;
     pointer-events: none;
     transition: 500ms;
@@ -204,7 +204,7 @@ body {
     height: 100%;
     border-radius: 10px;
     box-sizing: border-box;
-    color: #0F0B0B;
+    color: var(--color-negro);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,6 +226,10 @@ body {
 
 .element .name {
     font-size: 0.7vw;
+}
+
+code{
+    color: var(--color-negro);
 }
 
 .element input[type="radio"] {
@@ -334,7 +338,7 @@ body {
     border-width: 0 0 2px 2px;
     border-style: solid;
     margin-left: -1px;
-    color: #fff;
+    color: var(--color-blanco);
     opacity: 0.2;
 }
 
@@ -502,7 +506,7 @@ body {
         font-size: 0.5vw;
         padding-bottom: 100%;
         cursor: pointer;
-        color: #fff;
+        color: var(--color-blanco);
         transition: 500ms;
     }
 
@@ -513,7 +517,7 @@ body {
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: #101318;
+        background-color: var(--color-negro);
         opacity: 0;
         pointer-events: none;
         transition: 500ms;
@@ -527,7 +531,7 @@ body {
         height: 80%;
         border-radius: 10px;
         box-sizing: border-box;
-        color: #0F0B0B;
+        color: var(--color-negro);
         display: flex;
         flex-direction: column;
         justify-content: center;
