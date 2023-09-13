@@ -1,7 +1,6 @@
 <template>
     <div class="periodic-table">
         <div v-for="elemento in elementosData" :key="elemento.numero" :class="['element', elemento.grupo]">
-
             <div class="element documentoC c1 r1">
                 <input class="activate" type="radio" name="elements" />
                 <input class="deactivate" type="radio" name="elements" />
@@ -29,6 +28,7 @@ export default {
             try {
                 const response = await fetch('/data/elementos2.json'); // Ajusta la ruta relativa según tu proyecto
                 const data = await response.json();
+                console.log(data);
                 elementosData.value = data;
             } catch (error) {
                 console.error('Error al cargar el archivo JSON:', error);
