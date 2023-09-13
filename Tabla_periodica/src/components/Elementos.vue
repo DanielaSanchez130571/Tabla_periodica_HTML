@@ -3,7 +3,7 @@
       <div
         v-for="elemento in elementosData"
         :key="elemento.numero"
-        :class="['element', elemento.categoria.toLowerCase()]"
+        :class="['element', elemento.grupo]"
       >
         <input class="activate" type="radio" name="elements" />
         <input class="deactivate" type="radio" name="elements" />
