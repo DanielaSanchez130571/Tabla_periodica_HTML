@@ -1,50 +1,49 @@
 <template>
     <div class="periodic-table">
-      <div
-        v-for="elemento in elementosData"
-        :key="elemento.numero"
-        :class="['element', elemento.grupo]"
-      >
-        <input class="activate" type="radio" name="elements" />
-        <input class="deactivate" type="radio" name="elements" />
-        <div class="overlay"></div>
-        <div class="square">
-          <div class="atomic-number">{{ elemento.numero }}</div>
-          <div class="label">
-            <div class="symbol">{{ elemento.simbolo }}</div>
-            <div class="name">{{ elemento.nombre }}</div>
-          </div>
+        <div v-for="elemento in elementosData" :key="elemento.numero" :class="['element', elemento.grupo]">
+
+            <div class="element documentoC c1 r1">
+                <input class="activate" type="radio" name="elements" />
+                <input class="deactivate" type="radio" name="elements" />
+                <div class="overlay"></div>
+                <div :class="['square', elemento.grupo]">
+                    <div class="atomic-number">{{ elemento.numero }}</div>
+                    <div class="label">
+                        <div class="symbol">{{ elemento.nombre }}</div>
+                        <div class="name"><code>&lt;{{ elemento.tag }}&gt;</code></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </template>
+</template>
   
-  <script>
-  import { ref, onMounted } from 'vue';
-  
-  export default {
+<script>
+import { ref, onMounted } from 'vue';
+
+export default {
     setup() {
-      const elementosData = ref([]);
-  
-      onMounted(async () => {
-        try {
-          const response = await fetch('/data/elementos2.json'); // Ajusta la ruta relativa según tu proyecto
-          const data = await response.json();
-          elementosData.value = data;
-        } catch (error) {
-          console.error('Error al cargar el archivo JSON:', error);
-        }
-      });
-  
-      return {
-        elementosData,
-      };
+        const elementosData = ref([]);
+
+        onMounted(async () => {
+            try {
+                const response = await fetch('/data/elementos2.json'); // Ajusta la ruta relativa según tu proyecto
+                const data = await response.json();
+                elementosData.value = data;
+            } catch (error) {
+                console.error('Error al cargar el archivo JSON:', error);
+            }
+        });
+
+        return {
+            elementosData,
+        };
     },
-  };
-  </script>
+};
+</script>
 
 <style>
-  .documento {
+.documento {
     background-color: var(--color-azul-claro)
 }
 
@@ -180,7 +179,7 @@
     font-size: 0.7vw;
 }
 
-code{
+code {
     color: var(--color-negro);
 }
 
@@ -731,4 +730,4 @@ code{
     pointer-events: all;
     cursor: pointer;
 }
-  </style>
+</style>
