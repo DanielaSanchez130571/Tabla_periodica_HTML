@@ -13,11 +13,8 @@
             <span class="oTitulo">O</span>
             <span class="sTitulo">S</span> HTML</h1>
 </nav>
+
 <main class="body" >
-    
-    
-    <!-- <div id="app"></div>
-    <script type="module" src="/src/main.js"></script> -->
     <div class="wrapper">
         <input class="categorias-t" type="radio" id="documentosC" name="categories" />
         <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
@@ -1598,5 +1595,6 @@
     <footer class="footer">
         <p>&copy; 2023 | Kuepa | TechPower</p>
     </footer>
-  </main>
+</main>
+
 </template>
