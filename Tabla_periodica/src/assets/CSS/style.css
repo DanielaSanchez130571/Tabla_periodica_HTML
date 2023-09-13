@@ -19,9 +19,12 @@
 }
 
 @font-face {
-    font-family: 'Nexarut';
-    src: url('/Tabla_periodica/src/assets/tipografias/NexaRustSlab-Trial-Shadow.ttf') format('truetype');
-}
+    font-family: 'Next';
+    src: url('./assets/tipografias/NexaRustSlab-Trial-BlackShadow3.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 
 @media (min-width: 1200px) {
     h1 {
@@ -44,11 +47,15 @@ main {
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    font-family: 'Nexarut', sans-serif;
+}
+
+h1{
+    font-family: 'Next';
 }
 
 .eTitulo {
     color: var(--color-azul-claro);
+    font-family: 'Next';
 }
 
 .lTitulo {
