@@ -1,5 +1,5 @@
 <template>
-
+<body>
 <nav class="navBar">
         <h1 class="titulo">TABLA PERIÓDICA</h1>
         <h1 class="titulo">
@@ -14,7 +14,7 @@
             <span class="sTitulo">S</span> HTML</h1>
 </nav>
 
-<main class="body" >
+<main>
     <div class="wrapper">
         <input class="categorias-t" type="radio" id="documentosC" name="categories" />
         <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
@@ -1588,13 +1588,16 @@
         </div>
     </div>
 
-    <div class="wrapper">
+</main>
+
+<div class="wrapper">
         <h3>Saber mas sobre HTML</h3>
     </div>
     
     <footer class="footer">
         <p>&copy; 2023 | Kuepa | TechPower</p>
     </footer>
-</main>
+
+</body>
 
 </template>

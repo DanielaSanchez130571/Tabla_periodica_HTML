@@ -1,0 +1,1725 @@
+[
+    {
+        "numero": "1",
+        "nombre": "H",
+        "tag": "<html>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<html>` representa la raíz de un documento HTML.",
+            "ejemplo": "<!DOCTYPE html>",
+            "interfazDOM": "La interfaz HTMLHtmlElement sirve como nodo raíz para un documento HTML determinado. Este objeto hereda las propiedades y métodos descritos en la interfaz HTMLElement. Puedes recuperar el objeto HTMLHtmlElement de un documento determinado leyendo el valor de la propiedad document.documentElement.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/html"
+        }
+    },
+    {
+        "numero": "2",
+        "nombre": "Hd",
+        "tag": "<head>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento HTML `<head>` provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.",
+            "ejemplo": "<head> <title> Título del documento </title> </head>",
+            "interfazDOM": "La interfaz HTMLHeadElement contiene la información descriptiva o metadata para un documento. Este objeto hereda las propiedades y métodos descritos en la interfaz HTMLElement.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/head"
+        }
+    },
+    {
+        "numero": "3",
+        "nombre": "Hd2",
+        "tag": "<header>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<header>` representa un grupo de contenido introductorio o un conjunto de enlaces de navegación. Usualmente contiene el logotipo, el título del sitio web y las principales secciones de navegación.",
+            "ejemplo": "<header>...</header>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/header"
+        }
+    },
+    {
+        "numero": "4",
+        "nombre": "Hd3",
+        "tag": "<h1>, <h2>, <h3>, ...",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "Los elementos de encabezado `<h1>`, `<h2>`, `<h3>`, etc., representan los encabezados de una sección. `<h1>` se considera el encabezado de más alto nivel y `<h6>` el de más bajo nivel. Estos elementos ayudan a estructurar el contenido de la página.",
+            "ejemplo": "<h1>Encabezado de nivel 1</h1> <h2>Encabezado de nivel 2</h2> <h3>Encabezado de nivel 3</h3>",
+            "interfazDOM": "La interfaz HTMLHeadingElement representa los elementos de encabezado `<h1>`, `<h2>`, `<h3>`, etc., que representan los encabezados de una sección en un documento HTML.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements"
+        }
+    },
+    {
+        "numero": "5",
+        "nombre": "P",
+        "tag": "<p>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<p>` representa un párrafo de texto. Es uno de los elementos más comunes para estructurar el contenido textual en una página web.",
+            "ejemplo": "<p>Este es un párrafo de ejemplo.</p>",
+            "interfazDOM": "La interfaz HTMLParagraphElement representa el elemento de párrafo `<p>` y hereda todas las propiedades y métodos de la interfaz HTMLElement.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/p"
+        }
+    },
+    {
+        "numero": "6",
+        "nombre": "A",
+        "tag": "<a>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<a>` representa un hiperenlace, o enlace, que puede usarse para navegar a otra página o recurso. Es uno de los elementos más importantes en la construcción de la web.",
+            "ejemplo": "<a href='https://www.ejemplo.com'>Enlace de ejemplo</a>",
+            "interfazDOM": "La interfaz HTMLAnchorElement representa el elemento `<a>` y proporciona propiedades y métodos para interactuar con enlaces de hipertexto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/a"
+        }
+    },
+    {
+        "numero": "7",
+        "nombre": "Nv",
+        "tag": "<nav>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<nav>` representa una sección de navegación de una página web. Puede contener enlaces a otras páginas o partes de la página actual.",
+            "ejemplo": "<nav> <ul> <li><a href='#inicio'>Inicio</a></li> <li><a href='#acerca'>Acerca de</a></li> <li><a href='#contacto'>Contacto</a></li> </ul> </nav>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"
+        }
+    },
+    {
+        "numero": "8",
+        "nombre": "F",
+        "tag": "<footer>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<footer>` representa una sección de pie de página o área de cierre de una página web. Puede contener información de derechos de autor, enlaces a páginas relacionadas o información de contacto.",
+            "ejemplo": "<footer> &copy; 2023 Mi Sitio Web </footer>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"
+        }
+    },
+    {
+        "numero": "9",
+        "nombre": "S",
+        "tag": "<section>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<section>` representa una sección temática o de contenido dentro de un documento HTML. Ayuda a estructurar y organizar el contenido de la página.",
+            "ejemplo": "<section> <h2>Sección de Noticias</h2> <p>Últimas noticias...</p> </section>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/section"
+        }
+    },
+    {
+        "numero": "10",
+        "nombre": "Ar",
+        "tag": "<article>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<article>` representa una composición independiente en un documento HTML, como un artículo de noticias, un blog o un comentario de usuario.",
+            "ejemplo": "<article> <h3>Artículo de Noticias</h3> <p>Contenido del artículo...</p> </article>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/article"
+        }
+    },
+    {
+        "numero": "11",
+        "nombre": "A",
+        "tag": "<aside>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<aside>` representa contenido tangencial o relacionado, que generalmente se encuentra en un área lateral o al margen del contenido principal.",
+            "ejemplo": "<aside> Anuncios <a href='#'>Ver más</a> </aside>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"
+        }
+    },
+    {
+        "numero": "12",
+        "nombre": "Hg",
+        "tag": "<hgroup>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<hgroup>` representa un grupo de elementos de encabezado `<h1>` a `<h6>` que forman una unidad temática o de contenido en un documento.",
+            "ejemplo": "<hgroup> <h1>Título Principal</h1> <h2>Subtítulo</h2> </hgroup>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/hgroup"
+        }
+    },
+    {
+        "numero": "13",
+        "nombre": "Fg",
+        "tag": "<figure>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<figure>` representa cualquier contenido que esté referenciado desde el contenido principal, como imágenes, gráficos, ilustraciones, diagramas, entre otros.",
+            "ejemplo": "<figure> <img src='imagen.jpg' alt='Descripción de la imagen'> <figcaption>Descripción de la imagen</figcaption> </figure>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/figure"
+        }
+    },
+    {
+        "numero": "14",
+        "nombre": "Fc",
+        "tag": "<figcaption>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<figcaption>` proporciona una descripción o título para un elemento `<figure>` dentro de un documento HTML.",
+            "ejemplo": "<figure> <img src='imagen.jpg' alt='Descripción de la imagen'> <figcaption>Descripción de la imagen</figcaption> </figure>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. Aunque este elemento generalmente se encuentra dentro de la sección `<body>`, puede estar ubicado en otros lugares en documentos HTML más complejos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/figcaption"
+        }
+    },
+    {
+        "numero": "15",
+        "nombre": "M",
+        "tag": "<main>",
+        "grupo": "Documento",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<main>` representa el contenido principal o el área central de un documento HTML. Debe haber solo un elemento `<main>` en un documento.",
+            "ejemplo": "<main>Contenido principal</main>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento en un documento HTML. El elemento `<main>` se utiliza para marcar el contenido principal y debe estar contenido en la sección `<body>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/main"
+        }
+    },
+    {
+        "numero": "16",
+        "nombre": "Fr",
+        "tag": "<form>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<form>` se utiliza para crear un formulario HTML para recopilar datos de los usuarios. Puede contener varios elementos de entrada y botones de envío.",
+            "ejemplo": "<form action='/enviar' method='post'>...</form>",
+            "interfazDOM": "La interfaz HTMLFormElement proporciona propiedades y métodos para interactuar con elementos de formulario. Los elementos de formulario contenidos en un `<form>` se pueden acceder a través de esta interfaz.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/form"
+        }
+    },
+    {
+        "numero": "17",
+        "nombre": "L",
+        "tag": "<label>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<label>` representa una etiqueta descriptiva para un elemento de formulario `<input>`, `<textarea>` o `<select>`. Ayuda a mejorar la accesibilidad y usabilidad de los formularios.",
+            "ejemplo": "<label for='nombre'>Nombre:</label> <input type='text' id='nombre'>",
+            "interfazDOM": "La interfaz HTMLLabelElement proporciona propiedades y métodos para interactuar con elementos `<label>`. Un `<label>` generalmente se asocia a un elemento de formulario mediante el atributo 'for' o envolviéndolo alrededor del elemento.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/label"
+        }
+    },
+    {
+        "numero": "18",
+        "nombre": "I",
+        "tag": "<input>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` se utiliza para crear controles interactivos en formularios web. Puede ser de varios tipos, como texto, contraseña, casilla de verificación, radio, etc.",
+            "ejemplo": "<input type='text' id='nombre' name='nombre'>",
+            "interfazDOM": "La interfaz HTMLInputElement proporciona propiedades y métodos para interactuar con elementos `<input>`. El atributo 'type' determina el tipo de control que se mostrará.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input"
+        }
+    },
+    {
+        "numero": "19",
+        "nombre": "Ta",
+        "tag": "<textarea>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<textarea>` se utiliza para crear áreas de texto en formularios web. Los usuarios pueden escribir texto largo en estas áreas.",
+            "ejemplo": "<textarea id='comentarios' name='comentarios' rows='4' cols='50'></textarea>",
+            "interfazDOM": "La interfaz HTMLTextAreaElement proporciona propiedades y métodos para interactuar con elementos `<textarea>`. Puedes especificar el número de filas y columnas que se mostrarán en el área de texto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea"
+        }
+    },
+    {
+        "numero": "20",
+        "nombre": "Slt",
+        "tag": "<select>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<select>` se utiliza para crear listas desplegables en formularios web. Los usuarios pueden seleccionar una opción de la lista.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLSelectElement proporciona propiedades y métodos para interactuar con elementos `<select>`. Puedes agregar opciones utilizando elementos `<option>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/select"
+        }
+    },
+    {
+        "numero": "21",
+        "nombre": "Btn",
+        "tag": "<button>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<button>` se utiliza para crear botones en formularios web. Pueden utilizarse para enviar formularios o activar scripts, entre otras cosas.",
+            "ejemplo": "<button type='submit'>Enviar</button>",
+            "interfazDOM": "La interfaz HTMLButtonElement proporciona propiedades y métodos para interactuar con elementos `<button>`. El atributo 'type' especifica el comportamiento del botón.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/button"
+        }
+    },
+    {
+        "numero": "22",
+        "nombre": "Incr",
+        "tag": "<input type='radio'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='radio'>` se utiliza para crear botones de opción en formularios web. Los usuarios pueden seleccionar una opción de una lista de botones de radio.",
+            "ejemplo": "<input type='radio' id='opcion1' name='opcion' value='1'> <label for='opcion1'>Opción 1</label>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' radio) representa un botón de opción de radio en un formulario HTML. El atributo 'name' agrupa los botones de opción relacionados.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/radio"
+        }
+    },
+    {
+        "numero": "23",
+        "nombre": "Incck",
+        "tag": "<input type='checkbox'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='checkbox'>` se utiliza para crear casillas de verificación en formularios web. Los usuarios pueden marcar o desmarcar la casilla.",
+            "ejemplo": "<input type='checkbox' id='suscripcion' name='suscripcion' value='aceptado'> <label for='suscripcion'>Acepto recibir correos electrónicos</label>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' checkbox) representa una casilla de verificación en un formulario HTML. El atributo 'name' agrupa las casillas de verificación relacionadas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/checkbox"
+        }
+    },
+    {
+        "numero": "24",
+        "nombre": "Sel",
+        "tag": "<select>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<select>` se utiliza para crear listas desplegables en formularios web. Los usuarios pueden seleccionar una opción de la lista.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLSelectElement proporciona propiedades y métodos para interactuar con elementos `<select>`. Puedes agregar opciones utilizando elementos `<option>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/select"
+        }
+    },
+    {
+        "numero": "25",
+        "nombre": "Op",
+        "tag": "<option>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<option>` se utiliza dentro de un elemento `<select>` para definir una opción dentro de la lista desplegable.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLOptionElement representa un elemento `<option>` dentro de un elemento `<select>`. Cada opción puede tener un valor y un texto visible.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/option"
+        }
+    },
+    {
+        "numero": "26",
+        "nombre": "Txt",
+        "tag": "<input type='text'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='text'>` se utiliza para crear campos de texto de una sola línea en formularios web. Los usuarios pueden escribir texto en estos campos.",
+            "ejemplo": "<input type='text' id='nombre' name='nombre'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' text) representa un campo de texto de una sola línea en un formulario HTML.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/text"
+        }
+    },
+    {
+        "numero": "27",
+        "nombre": "Pwd",
+        "tag": "<input type='password'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='password'>` se utiliza para crear campos de contraseña en formularios web. El texto escrito en estos campos se muestra como asteriscos u otro carácter oculto.",
+            "ejemplo": "<input type='password' id='clave' name='clave'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' password) representa un campo de contraseña en un formulario HTML. El texto se oculta por razones de seguridad.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/password"
+        }
+    },
+    {
+        "numero": "28",
+        "nombre": "Fecha",
+        "tag": "<input type='date'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='date'>` se utiliza para crear campos de fecha en formularios web. Los usuarios pueden seleccionar una fecha de un calendario.",
+            "ejemplo": "<input type='date' id='fecha' name='fecha'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' date) representa un campo de fecha en un formulario HTML. Puedes definir el rango de fechas permitido utilizando los atributos 'min' y 'max'.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date"
+        }
+    },
+    {
+        "numero": "29",
+        "nombre": "Hora",
+        "tag": "<input type='time'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='time'>` se utiliza para crear campos de selección de hora en formularios web. Los usuarios pueden elegir una hora de un reloj analógico o digital.",
+            "ejemplo": "<input type='time' id='hora' name='hora'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' time) representa un campo de selección de hora en un formulario HTML. Puedes especificar el formato de hora utilizando el atributo 'step'.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/time"
+        }
+    },
+    {
+        "numero": "30",
+        "nombre": "Correo",
+        "tag": "<input type='email'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='email'>` se utiliza para crear campos de correo electrónico en formularios web. Ayuda a validar que se ingrese una dirección de correo válida.",
+            "ejemplo": "<input type='email' id='correo' name='correo'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' email) representa un campo de correo electrónico en un formulario HTML. El navegador realiza ciertas validaciones automáticamente.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/email"
+        }
+    },
+    {
+        "numero": "31",
+        "nombre": "URL",
+        "tag": "<input type='url'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='url'>` se utiliza para crear campos de URL en formularios web. Facilita la entrada de direcciones web válidas.",
+            "ejemplo": "<input type='url' id='sitio' name='sitio'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' url) representa un campo de URL en un formulario HTML. Ayuda a validar que se ingrese una dirección URL válida.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/url"
+        }
+    },
+    {
+        "numero": "32",
+        "nombre": "Color",
+        "tag": "<input type='color'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='color'>` se utiliza para crear campos de selección de color en formularios web. Los usuarios pueden elegir un color mediante un selector de colores.",
+            "ejemplo": "<input type='color' id='color' name='color'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' color) representa un campo de selección de color en un formulario HTML. Proporciona un selector de colores integrado.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/color"
+        }
+    },
+    {
+        "numero": "33",
+        "nombre": "Tel",
+        "tag": "<input type='tel'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='tel'>` se utiliza para crear campos de número de teléfono en formularios web. Facilita la entrada de números de teléfono válidos.",
+            "ejemplo": "<input type='tel' id='telefono' name='telefono'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' tel) representa un campo de número de teléfono en un formulario HTML. Ayuda a validar la entrada de números telefónicos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/tel"
+        }
+    },
+    {
+        "numero": "34",
+        "nombre": "Number",
+        "tag": "<input type='number'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='number'>` se utiliza para crear campos numéricos en formularios web. Los usuarios pueden ingresar valores numéricos.",
+            "ejemplo": "<input type='number' id='cantidad' name='cantidad'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' number) representa un campo numérico en un formulario HTML. Puedes especificar los rangos de valores permitidos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/number"
+        }
+    },
+    {
+        "numero": "35",
+        "nombre": "Rango",
+        "tag": "<input type='range'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='range'>` se utiliza para crear controles de rango en formularios web. Los usuarios pueden seleccionar un valor dentro de un rango especificado.",
+            "ejemplo": "<input type='range' id='valor' name='valor' min='0' max='100' step='1'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' range) representa un control de rango en un formulario HTML. Puedes especificar los valores mínimo, máximo y el paso entre valores.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/range"
+        }
+    },
+    {
+        "numero": "36",
+        "nombre": "Archivo",
+        "tag": "<input type='file'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='file'>` se utiliza para crear campos de carga de archivos en formularios web. Los usuarios pueden seleccionar archivos desde su dispositivo.",
+            "ejemplo": "<input type='file' id='archivo' name='archivo'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' file) representa un campo de carga de archivos en un formulario HTML. Puedes especificar los tipos de archivos permitidos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/file"
+        }
+    },
+    {
+        "numero": "37",
+        "nombre": "Submit",
+        "tag": "<input type='submit'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='submit'>` se utiliza para crear botones de envío en formularios web. Cuando se hace clic en este botón, se envían los datos del formulario al servidor.",
+            "ejemplo": "<input type='submit' value='Enviar'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' submit) representa un botón de envío en un formulario HTML. Puedes definir el texto que se muestra en el botón con el atributo 'value'.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/submit"
+        }
+    },
+    {
+        "numero": "38",
+        "nombre": "Reset",
+        "tag": "<input type='reset'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='reset'>` se utiliza para crear botones de restablecimiento en formularios web. Cuando se hace clic en este botón, se restauran los valores del formulario a los originales.",
+            "ejemplo": "<input type='reset' value='Restablecer'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' reset) representa un botón de restablecimiento en un formulario HTML. Puedes definir el texto que se muestra en el botón con el atributo 'value'.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/reset"
+        }
+    },
+    {
+        "numero": "39",
+        "nombre": "Imagen",
+        "tag": "<input type='image'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input type='image'>` se utiliza para crear botones de imagen en formularios web. Cuando se hace clic en la imagen, se envían los datos del formulario al servidor en las coordenadas del clic.",
+            "ejemplo": "<input type='image' src='boton.png' alt='Enviar formulario'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' image) representa un botón de imagen en un formulario HTML. Debes especificar la URL de la imagen con el atributo 'src'.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/image"
+        }
+    },
+    {
+        "numero": "40",
+        "nombre": "Salto de Línea",
+        "tag": "<br>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<br>` se utiliza para crear saltos de línea en formularios web o en cualquier parte del contenido HTML. No requiere una etiqueta de cierre.",
+            "ejemplo": "Texto1<br>Texto2",
+            "interfazDOM": "La interfaz HTMLElement representa el elemento `<br>`. No tiene atributos ni contenido, y se utiliza para generar un salto de línea.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/br"
+        }
+    },
+    {
+        "numero": "41",
+        "nombre": "Lista Ordenada",
+        "tag": "<ol>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<ol>` se utiliza para crear listas ordenadas en HTML. Cada ítem de la lista se marca con un número o una letra.",
+            "ejemplo": "<ol> <li>Elemento 1</li> <li>Elemento 2</li> </ol>",
+            "interfazDOM": "La interfaz HTMLOListElement representa una lista ordenada `<ol>`. Puedes agregar elementos de lista `<li>` dentro de esta lista.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/ol"
+        }
+    },
+    {
+        "numero": "42",
+        "nombre": "Lista Desordenada",
+        "tag": "<ul>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<ul>` se utiliza para crear listas desordenadas en HTML. Cada ítem de la lista se marca con un punto, guión o otro marcador.",
+            "ejemplo": "<ul> <li>Elemento A</li> <li>Elemento B</li> </ul>",
+            "interfazDOM": "La interfaz HTMLUListElement representa una lista desordenada `<ul>`. Puedes agregar elementos de lista `<li>` dentro de esta lista.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/ul"
+        }
+    },
+    {
+        "numero": "43",
+        "nombre": "Lista de Definición",
+        "tag": "<dl>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dl>` se utiliza para crear listas de definición en HTML. Cada término se define mediante un `<dt>` y su descripción se proporciona mediante un `<dd>`.",
+            "ejemplo": "<dl> <dt>Término 1</dt> <dd>Descripción 1</dd> <dt>Término 2</dt> <dd>Descripción 2</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDListElement representa una lista de definición `<dl>`. Debes usar elementos `<dt>` para los términos y `<dd>` para las descripciones.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dl"
+        }
+    },
+    {
+        "numero": "44",
+        "nombre": "Término de Lista de Definición",
+        "tag": "<dt>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dt>` se utiliza dentro de una lista de definición (`<dl>`) en HTML para marcar un término o concepto que se va a definir.",
+            "ejemplo": "<dl> <dt>Término</dt> <dd>Descripción</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDTElement representa un término en una lista de definición `<dl>`. Debe usarse junto con elementos `<dd>` para crear la lista de definición.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dt"
+        }
+    },
+    {
+        "numero": "45",
+        "nombre": "Descripción de Lista de Definición",
+        "tag": "<dd>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dd>` se utiliza dentro de una lista de definición (`<dl>`) en HTML para proporcionar la descripción o definición de un término.",
+            "ejemplo": "<dl> <dt>Término</dt> <dd>Descripción</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDDElement representa la descripción o definición de un término en una lista de definición `<dl>`. Debe usarse junto con elementos `<dt>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dd"
+        }
+    },
+    {
+        "numero": "46",
+        "nombre": "Lista de Menú",
+        "tag": "<menu>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<menu>` se utiliza para crear listas de comandos o menús contextuales en HTML. Puede contener elementos `<li>` como opciones de menú.",
+            "ejemplo": "<menu> <li><button>Guardar</button></li> <li><button>Eliminar</button></li> </menu>",
+            "interfazDOM": "La interfaz HTMLMenuElement representa una lista de menú `<menu>`. Se utiliza en conjunto con elementos `<li>` y otros elementos de formulario para crear menús.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/menu"
+        }
+    },
+    {
+        "numero": "47",
+        "nombre": "Elemento de Lista",
+        "tag": "<li>",
+        "grupo": "Listas",
+        "color": "naranja claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<li>` se utiliza para crear elementos de lista en HTML. Puede usarse en listas ordenadas (`<ol>`), listas desordenadas (`<ul>`) y listas de definición (`<dl>`).",
+            "ejemplo": "<ul> <li>Elemento 1</li> <li>Elemento 2</li> </ul>",
+            "interfazDOM": "La interfaz HTMLLIElement representa un elemento de lista `<li>`. Debe usarse dentro de elementos `<ol>`, `<ul>`, o `<dl>` para crear listas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/li"
+        }
+    },
+    {
+        "numero": "48",
+        "nombre": "Lista de Desplazamiento",
+        "tag": "<select>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<select>` se utiliza para crear listas desplegables en formularios web. Los usuarios pueden seleccionar una opción de la lista.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLSelectElement proporciona propiedades y métodos para interactuar con elementos `<select>`. Puedes agregar opciones utilizando elementos `<option>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/select"
+        }
+    },
+    {
+        "numero": "49",
+        "nombre": "Opción de Lista de Desplazamiento",
+        "tag": "<option>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<option>` se utiliza dentro de un elemento `<select>` para definir una opción dentro de la lista desplegable.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLOptionElement representa un elemento `<option>` dentro de un elemento `<select>`. Cada opción puede tener un valor y un texto visible.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/option"
+        }
+    },
+    {
+        "numero": "50",
+        "nombre": "Campo de Texto de Área",
+        "tag": "<textarea>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<textarea>` se utiliza para crear áreas de texto de varias líneas en formularios web. Los usuarios pueden escribir texto extenso aquí.",
+            "ejemplo": "<textarea id='comentarios' name='comentarios' rows='4' cols='50'></textarea>",
+            "interfazDOM": "La interfaz HTMLTextAreaElement representa un campo de texto de área `<textarea>` en un formulario HTML. Puedes especificar el número de filas y columnas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea"
+        }
+    },
+    {
+        "numero": "51",
+        "nombre": "Mapa de Imagen",
+        "tag": "<map>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<map>` se utiliza para definir áreas sensibles en una imagen que se puede hacer clic. Se utiliza en conjunto con el elemento `<img>` y áreas `<area>`.",
+            "ejemplo": "<img src='plano.jpg' alt='Plano del edificio' usemap='#edificio'> <map name='edificio'> <area shape='rect' coords='0,0,50,50' href='planta1.html' alt='Planta 1'> </map>",
+            "interfazDOM": "La interfaz HTMLMapElement representa un mapa de imagen `<map>`. Debe usarse en conjunto con el elemento `<img>` y áreas `<area>` para crear mapas de imagen sensibles.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/map"
+        }
+    },
+    {
+        "numero": "52",
+        "nombre": "Área de Mapa de Imagen",
+        "tag": "<area>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<area>` se utiliza dentro de un elemento `<map>` para definir áreas sensibles en una imagen de mapa de imagen. Se pueden hacer clic en estas áreas.",
+            "ejemplo": "<map name='edificio'> <area shape='rect' coords='0,0,50,50' href='planta1.html' alt='Planta 1'> </map>",
+            "interfazDOM": "La interfaz HTMLAreaElement representa un área de mapa de imagen `<area>`. Debe usarse dentro de un elemento `<map>` para definir áreas sensibles.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/area"
+        }
+    },
+    {
+        "numero": "53",
+        "nombre": "Audio",
+        "tag": "<audio>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<audio>` se utiliza para incorporar contenido de audio, como música o efectos de sonido, en una página web. Se puede controlar mediante JavaScript.",
+            "ejemplo": "<audio controls> <source src='musica.mp3' type='audio/mpeg'> Tu navegador no soporta el elemento de audio. </audio>",
+            "interfazDOM": "La interfaz HTMLAudioElement representa un elemento de audio `<audio>`. Puedes controlarlo mediante JavaScript y proporcionar múltiples fuentes de audio.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"
+        }
+    },
+    {
+        "numero": "54",
+        "nombre": "Video",
+        "tag": "<video>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<video>` se utiliza para incorporar contenido de video en una página web. Puedes proporcionar múltiples fuentes de video para la compatibilidad del navegador.",
+            "ejemplo": "<video controls width='320' height='240'> <source src='video.mp4' type='video/mp4'> Tu navegador no soporta el elemento de video. </video>",
+            "interfazDOM": "La interfaz HTMLVideoElement representa un elemento de video `<video>`. Puedes controlar la reproducción de video y proporcionar múltiples fuentes de video.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/video"
+        }
+    },
+    {
+        "numero": "55",
+        "nombre": "Objeto",
+        "tag": "<object>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<object>` se utiliza para incrustar contenido multimedia, como flash, en una página web. También se puede utilizar para otros tipos de contenido.",
+            "ejemplo": "<object data='archivo.swf' width='550' height='400'> <param name='movie' value='archivo.swf'> Tu navegador no soporta el elemento de objeto. </object>",
+            "interfazDOM": "La interfaz HTMLObjectElement representa un elemento de objeto `<object>`. Puedes incrustar contenido multimedia y especificar parámetros.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/object"
+        }
+    },
+    {
+        "numero": "56",
+        "nombre": "Iframe",
+        "tag": "<iframe>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<iframe>` se utiliza para incrustar otra página web dentro de una página. Puede ser útil para mostrar contenido de sitios externos o integrar contenido de terceros.",
+            "ejemplo": "<iframe src='https://www.ejemplo.com' width='800' height='600'></iframe>",
+            "interfazDOM": "La interfaz HTMLIFrameElement representa un elemento `<iframe>`. Puedes especificar la URL del contenido a incrustar y ajustar el tamaño y otras propiedades.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/iframe"
+        }
+    },
+    {
+        "numero": "57",
+        "nombre": "Marcador de Posición de Texto",
+        "tag": "<placeholder>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El atributo `placeholder` se utiliza en elementos de formulario (como `<input>` y `<textarea>`) para proporcionar un texto de marcador de posición que se muestra antes de que el usuario ingrese datos.",
+            "ejemplo": "<input type='text' placeholder='Ingrese su nombre'>",
+            "interfazDOM": "El atributo `placeholder` se aplica a elementos individuales de formulario en lugar de ser un elemento independiente. Ayuda a los usuarios a comprender qué se espera en un campo de formulario.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input#attr-placeholder"
+        }
+    },
+    {
+        "numero": "58",
+        "nombre": "Datalist",
+        "tag": "<datalist>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<datalist>` se utiliza en conjunto con un campo de entrada de texto (`<input>`) para proporcionar una lista de opciones sugeridas para el usuario.",
+            "ejemplo": "<input type='text' list='opciones'><datalist id='opciones'> <option value='Opción 1'> <option value='Opción 2'> <option value='Opción 3'> </datalist>",
+            "interfazDOM": "La interfaz HTMLDataListElement representa un elemento `<datalist>`. Se asocia con un campo de entrada de texto usando el atributo `list` y contiene opciones sugeridas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/datalist"
+        }
+    },
+    {
+        "numero": "59",
+        "nombre": "Encabezado",
+        "tag": "<header>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<header>` se utiliza para representar el encabezado de una sección o contenido. Por lo general, contiene elementos como logotipos, títulos y menús de navegación.",
+            "ejemplo": "<header> <h1>Mi Sitio Web</h1> <nav> <ul> <li><a href='#inicio'>Inicio</a></li> <li><a href='#acerca'>Acerca de</a></li> </ul> </nav> </header>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<header>`. Se utiliza para estructurar el contenido y mejorar la accesibilidad y la comprensión de la página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/header"
+        }
+    },
+    {
+        "numero": "60",
+        "nombre": "Navegación",
+        "tag": "<nav>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<nav>` se utiliza para representar una sección de navegación en una página web. Por lo general, contiene enlaces a otras páginas o secciones del sitio.",
+            "ejemplo": "<nav> <ul> <li><a href='#inicio'>Inicio</a></li> <li><a href='#acerca'>Acerca de</a></li> </ul> </nav>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<nav>`. Ayuda a los usuarios a encontrar y navegar por diferentes partes del sitio web de manera más eficiente.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"
+        }
+    },
+    {
+        "numero": "61",
+        "nombre": "Artículo",
+        "tag": "<article>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<article>` se utiliza para representar un contenido independiente o autónomo en una página web, como una publicación de blog, una noticia o un artículo.",
+            "ejemplo": "<article> <h2>Título del artículo</h2> <p>Contenido del artículo...</p> </article>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<article>`. Se utiliza para marcar contenido que puede existir por sí mismo y ser reutilizable.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/article"
+        }
+    },
+    {
+        "numero": "62",
+        "nombre": "Sección",
+        "tag": "<section>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<section>` se utiliza para agrupar contenido relacionado en una página web. Puede contener encabezados, párrafos y otros elementos relacionados.",
+            "ejemplo": "<section> <h2>Sección 1</h2> <p>Contenido de la sección...</p> </section>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<section>`. Se utiliza para organizar el contenido de manera semántica y estructurada.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/section"
+        }
+    },
+    {
+        "numero": "63",
+        "nombre": "Artículo de Detalle",
+        "tag": "<details>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<details>` se utiliza para crear un contenido que se puede expandir o colapsar, revelando o ocultando información adicional.",
+            "ejemplo": "<details> <summary>Ver más</summary> <p>Información adicional...</p> </details>",
+            "interfazDOM": "La interfaz HTMLDetailsElement representa un elemento `<details>`. Se utiliza junto con el elemento `<summary>` para proporcionar un encabezado de control.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/details"
+        }
+    },
+    {
+        "numero": "64",
+        "nombre": "Resumen de Detalle",
+        "tag": "<summary>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<summary>` se utiliza en conjunto con `<details>` para proporcionar un encabezado de control que muestra u oculta el contenido desplegable.",
+            "ejemplo": "<details> <summary>Ver más</summary> <p>Información adicional...</p> </details>",
+            "interfazDOM": "La interfaz HTMLSummaryElement representa un elemento `<summary>`. Debe usarse dentro de un elemento `<details>` para crear un encabezado de control.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/summary"
+        }
+    },
+    {
+        "numero": "65",
+        "nombre": "Figura",
+        "tag": "<figure>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<figure>` se utiliza para encapsular contenido relacionado, como imágenes y gráficos, con un título o leyenda opcional.",
+            "ejemplo": "<figure> <img src='imagen.jpg' alt='Una imagen'> <figcaption>Descripción de la imagen.</figcaption> </figure>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<figure>`. Puede contener elementos como `<img>` y `<figcaption>` para estructurar contenido relacionado.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/figure"
+        }
+    },
+    {
+        "numero": "66",
+        "nombre": "Leyenda de Figura",
+        "tag": "<figcaption>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<figcaption>` se utiliza dentro de un elemento `<figure>` para proporcionar una leyenda o descripción del contenido relacionado, como una imagen.",
+            "ejemplo": "<figure> <img src='imagen.jpg' alt='Una imagen'> <figcaption>Descripción de la imagen.</figcaption> </figure>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<figcaption>`. Debe usarse dentro de un elemento `<figure>` para describir el contenido relacionado.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/figcaption"
+        }
+    },
+    {
+        "numero": "67",
+        "nombre": "Marco de Imagen",
+        "tag": "<img>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<img>` se utiliza para mostrar imágenes en una página web. Puede incluir atributos como `src`, `alt`, `width` y `height`.",
+            "ejemplo": "<img src='imagen.jpg' alt='Una imagen' width='300' height='200'>",
+            "interfazDOM": "La interfaz HTMLImageElement representa un elemento `<img>`. Se utiliza para mostrar imágenes y mejorar la accesibilidad con texto alternativo (`alt`).",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/img"
+        }
+    },
+    {
+        "numero": "68",
+        "nombre": "Campo de Fecha",
+        "tag": "<input type='date'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='date'` se utiliza para crear campos de entrada de fecha en formularios web. Los usuarios pueden seleccionar una fecha.",
+            "ejemplo": "<input type='date' id='fecha' name='fecha'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' date) representa un campo de fecha en un formulario HTML. Puedes especificar atributos como `min` y `max` para limitar las fechas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/date"
+        }
+    },
+    {
+        "numero": "69",
+        "nombre": "Campo de Hora",
+        "tag": "<input type='time'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='time'` se utiliza para crear campos de entrada de hora en formularios web. Los usuarios pueden seleccionar una hora.",
+            "ejemplo": "<input type='time' id='hora' name='hora'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' time) representa un campo de hora en un formulario HTML. Puedes especificar atributos como `min` y `max` para limitar las horas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/time"
+        }
+    },
+    {
+        "numero": "70",
+        "nombre": "Campo de Fecha y Hora",
+        "tag": "<input type='datetime-local'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='datetime-local'` se utiliza para crear campos de entrada de fecha y hora en formularios web.",
+            "ejemplo": "<input type='datetime-local' id='fecha-hora' name='fecha-hora'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' datetime-local) representa un campo de fecha y hora en un formulario HTML. Puedes especificar atributos como `min` y `max` para limitar las fechas y horas permitidas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/datetime-local"
+        }
+    },
+    {
+        "numero": "71",
+        "nombre": "Campo de Mes",
+        "tag": "<input type='month'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='month'` se utiliza para crear campos de entrada de mes y año en formularios web.",
+            "ejemplo": "<input type='month' id='mes' name='mes'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' month) representa un campo de mes y año en un formulario HTML. Los usuarios pueden seleccionar un mes y año.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/month"
+        }
+    },
+    {
+        "numero": "72",
+        "nombre": "Campo de Semana",
+        "tag": "<input type='week'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='week'` se utiliza para crear campos de entrada de semana y año en formularios web.",
+            "ejemplo": "<input type='week' id='semana' name='semana'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' week) representa un campo de semana y año en un formulario HTML. Los usuarios pueden seleccionar una semana.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/week"
+        }
+    },
+    {
+        "numero": "73",
+        "nombre": "Campo de Número",
+        "tag": "<input type='number'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='number'` se utiliza para crear campos de entrada numérica en formularios web.",
+            "ejemplo": "<input type='number' id='cantidad' name='cantidad' min='0' max='100' step='1' value='0'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' number) representa un campo de número en un formulario HTML. Puedes especificar atributos como `min`, `max` y `step`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/number"
+        }
+    },
+    {
+        "numero": "74",
+        "nombre": "Campo de Rango",
+        "tag": "<input type='range'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='range'` se utiliza para crear controles deslizantes (rangos) en formularios web.",
+            "ejemplo": "<input type='range' id='puntuacion' name='puntuacion' min='0' max='10' step='1' value='5'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' range) representa un campo de rango en un formulario HTML. Los usuarios pueden seleccionar un valor dentro de un rango especificado.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/range"
+        }
+    },
+    {
+        "numero": "75",
+        "nombre": "Campo de Color",
+        "tag": "<input type='color'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='color'` se utiliza para crear campos de selección de color en formularios web.",
+            "ejemplo": "<input type='color' id='color' name='color' value='#ff0000'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' color) representa un campo de selección de color en un formulario HTML. Los usuarios pueden elegir un color.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/color"
+        }
+    },
+    {
+        "numero": "76",
+        "nombre": "Campo de Búsqueda",
+        "tag": "<input type='search'>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<input>` con el atributo `type='search'` se utiliza para crear campos de búsqueda en formularios web. Proporciona una interfaz de búsqueda especializada.",
+            "ejemplo": "<input type='search' id='busqueda' name='busqueda' placeholder='Buscar...'>",
+            "interfazDOM": "La interfaz HTMLInputElement (con 'type' search) representa un campo de búsqueda en un formulario HTML. Puede incluir un marcador de posición (`placeholder`).",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/input/search"
+        }
+    },
+    {
+        "numero": "77",
+        "nombre": "Selección Múltiple",
+        "tag": "<select multiple>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<select>` con el atributo `multiple` se utiliza para crear listas desplegables que permiten a los usuarios seleccionar múltiples opciones.",
+            "ejemplo": "<select multiple id='colores' name='colores'> <option value='rojo'>Rojo</option> <option value='azul'>Azul</option> <option value='verde'>Verde</option> </select>",
+            "interfazDOM": "La interfaz HTMLSelectElement (con 'multiple') representa un elemento `<select>` que permite la selección de múltiples opciones. Se usa en formularios.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/select/multiple"
+        }
+    },
+    {
+        "numero": "78",
+        "nombre": "Etiqueta de Grupo de Opciones",
+        "tag": "<optgroup>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<optgroup>` se utiliza dentro de un elemento `<select>` para agrupar opciones relacionadas en una lista desplegable.",
+            "ejemplo": "<select id='colores' name='colores'> <optgroup label='Colores básicos'> <option value='rojo'>Rojo</option> <option value='azul'>Azul</option> </optgroup> <optgroup label='Colores secundarios'> <option value='verde'>Verde</option> <option value='amarillo'>Amarillo</option> </optgroup> </select>",
+            "interfazDOM": "La interfaz HTMLOptGroupElement representa un grupo de opciones `<optgroup>` dentro de un elemento `<select>`. Ayuda a organizar las opciones.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/optgroup"
+        }
+    },
+    {
+        "numero": "79",
+        "nombre": "Opción de Lista de Desplazamiento",
+        "tag": "<option>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<option>` se utiliza dentro de un elemento `<select>` para definir una opción dentro de la lista desplegable.",
+            "ejemplo": "<select id='paises' name='paises'> <option value='espana'>España</option> <option value='francia'>Francia</option> </select>",
+            "interfazDOM": "La interfaz HTMLOptionElement representa un elemento `<option>` dentro de un elemento `<select>`. Cada opción puede tener un valor y un texto visible.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/option"
+        }
+    },
+    {
+        "numero": "80",
+        "nombre": "Campo de Texto de Área",
+        "tag": "<textarea>",
+        "grupo": "Formularios",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<textarea>` se utiliza para crear áreas de texto de varias líneas en formularios web. Los usuarios pueden escribir texto extenso aquí.",
+            "ejemplo": "<textarea id='comentarios' name='comentarios' rows='4' cols='50'></textarea>",
+            "interfazDOM": "La interfaz HTMLTextAreaElement representa un campo de texto de área `<textarea>` en un formulario HTML. Puedes especificar el número de filas y columnas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea"
+        }
+    },
+    {
+        "numero": "81",
+        "nombre": "Mapa de Imagen",
+        "tag": "<map>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<map>` se utiliza para definir áreas sensibles en una imagen que se puede hacer clic. Se utiliza en conjunto con el elemento `<img>` y áreas `<area>`.",
+            "ejemplo": "<img src='plano.jpg' alt='Plano del edificio' usemap='#edificio'> <map name='edificio'> <area shape='rect' coords='0,0,50,50' href='planta1.html' alt='Planta 1'> </map>",
+            "interfazDOM": "La interfaz HTMLMapElement representa un mapa de imagen `<map>`. Debe usarse en conjunto con el elemento `<img>` y áreas `<area>` para crear mapas de imagen sensibles.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/map"
+        }
+    },
+    {
+        "numero": "82",
+        "nombre": "Área de Mapa de Imagen",
+        "tag": "<area>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<area>` se utiliza dentro de un elemento `<map>` para definir áreas sensibles en una imagen de mapa de imagen. Se pueden hacer clic en estas áreas.",
+            "ejemplo": "<map name='edificio'> <area shape='rect' coords='0,0,50,50' href='planta1.html' alt='Planta 1'> </map>",
+            "interfazDOM": "La interfaz HTMLAreaElement representa un área de mapa de imagen `<area>`. Debe usarse dentro de un elemento `<map>` para definir áreas sensibles.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/area"
+        }
+    },
+    {
+        "numero": "84",
+        "nombre": "Video",
+        "tag": "<video>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<video>` se utiliza para incorporar contenido de video en una página web. Puedes proporcionar varios formatos de video para la compatibilidad del navegador.",
+            "ejemplo": "<video controls width='320' height='240'> <source src='video.mp4' type='video/mp4'> <source src='video.webm' type='video/webm'> Tu navegador no soporta el elemento de video. </video>",
+            "interfazDOM": "La interfaz HTMLVideoElement representa un elemento de video `<video>`. Puedes controlarlo mediante JavaScript y ofrecer diferentes formatos de video.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/video"
+        }
+    },
+    {
+        "numero": "85",
+        "nombre": "Elemento de Áudio",
+        "tag": "<audio>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<audio>` se utiliza para incorporar contenido de audio, como música o efectos de sonido, en una página web. Se puede controlar mediante JavaScript.",
+            "ejemplo": "<audio controls> <source src='musica.mp3' type='audio/mpeg'> Tu navegador no soporta el elemento de audio. </audio>",
+            "interfazDOM": "La interfaz HTMLAudioElement representa un elemento de audio `<audio>`. Puedes controlarlo mediante JavaScript y proporcionar múltiples fuentes de audio.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"
+        }
+    },
+    {
+        "numero": "86",
+        "nombre": "Fuente de Audio",
+        "tag": "<source>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<source>` se utiliza junto con los elementos de audio y video para especificar las fuentes de medios, incluidos los formatos y las ubicaciones.",
+            "ejemplo": "<audio controls> <source src='musica.mp3' type='audio/mpeg'> <source src='musica.ogg' type='audio/ogg'> Tu navegador no soporta el elemento de audio. </audio>",
+            "interfazDOM": "La interfaz HTMLSourceElement representa una fuente de medios `<source>` utilizada para especificar fuentes de audio y video dentro de elementos multimedia.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/source"
+        }
+    },
+    {
+        "numero": "87",
+        "nombre": "Objeto",
+        "tag": "<object>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<object>` se utiliza para insertar objetos multimedia, como animaciones Flash o contenido incrustado, en una página web.",
+            "ejemplo": "<object data='animacion.swf' type='application/x-shockwave-flash' width='400' height='300'> <param name='movie' value='animacion.swf'> Tu navegador no soporta el elemento de objeto. </object>",
+            "interfazDOM": "La interfaz HTMLObjectElement representa un elemento `<object>`. Se utiliza para insertar contenido multimedia o plugins en una página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/object"
+        }
+    },
+    {
+        "numero": "88",
+        "nombre": "Embed",
+        "tag": "<embed>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<embed>` se utiliza para incrustar contenido multimedia, como Flash, audio o video, directamente en una página web.",
+            "ejemplo": "<embed src='contenido.swf' type='application/x-shockwave-flash' width='400' height='300'>",
+            "interfazDOM": "La interfaz HTMLEmbedElement representa un elemento `<embed>`. Se utiliza para incrustar contenido multimedia en una página web de manera directa.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/embed"
+        }
+    },
+    {
+        "numero": "89",
+        "nombre": "Fuente de Imagen",
+        "tag": "<source>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<source>` se utiliza dentro de elementos multimedia como `<audio>` y `<video>` para especificar las fuentes de imagen o video.",
+            "ejemplo": "<video controls width='320' height='240'> <source src='video.mp4' type='video/mp4'> <source src='video.webm' type='video/webm'> Tu navegador no soporta el elemento de video. </video>",
+            "interfazDOM": "La interfaz HTMLSourceElement representa una fuente de medios `<source>` utilizada para especificar fuentes de imagen o video dentro de elementos multimedia.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/source"
+        }
+    },
+    {
+        "numero": "90",
+        "nombre": "Objeto de Medios",
+        "tag": "<media>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<media>` se utiliza para incrustar contenido multimedia, como audio o video, en una página web. Es similar al elemento `<object>`.",
+            "ejemplo": "<media data='video.mp4' type='video/mp4' width='400' height='300'> Tu navegador no soporta el elemento de media. </media>",
+            "interfazDOM": "La interfaz HTMLMediaElement representa un elemento `<media>`. Se utiliza para incrustar contenido multimedia en una página web, similar al elemento `<object>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/media"
+        }
+    },
+    {
+        "numero": "91",
+        "nombre": "Fuente Web",
+        "tag": "<source>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento HTML <article> representa una composición autónoma en un documento, página, aplicación o sitio, que está destinada a ser distribuible o reutilizable de forma independiente (por ejemplo, en sindicación). Los ejemplos incluyen: una publicación en un foro, un artículo de revista o periódico, una entrada de blog, una tarjeta de producto, un comentario enviado por un usuario, un widget o gadget interactivo o cualquier otro elemento de contenido independiente.",
+            "ejemplo": "<article class='day-forecast'><h2>04 March 2018</h2><p>Periods of rain.</p></article>",
+            "interfazDOM": "La interfaz HTMLDialogElement proporciona métodos para manipular elementos <dialog>. Hereda propiedades y métodos de la interfaz HTMLElement.",
+            "URL": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
+        }
+    },
+    {
+        "numero": "92",
+        "nombre": "Audio de Internet",
+        "tag": "<audio>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<audio>` se utiliza para incrustar contenido de audio de Internet, como transmisiones en vivo o archivos de audio alojados en línea.",
+            "ejemplo": "<audio controls src='https://ejemplo.com/audio.mp3'> Tu navegador no soporta el elemento de audio. </audio>",
+            "interfazDOM": "La interfaz HTMLAudioElement representa un elemento `<audio>` utilizado para incrustar contenido de audio de Internet en una página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"
+        }
+    },
+    {
+        "numero": "93",
+        "nombre": "Video de Internet",
+        "tag": "<video>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<video>` se utiliza para incrustar contenido de video de Internet, como transmisiones en vivo o archivos de video alojados en línea.",
+            "ejemplo": "<video controls width='320' height='240' src='https://ejemplo.com/video.mp4'> Tu navegador no soporta el elemento de video. </video>",
+            "interfazDOM": "La interfaz HTMLVideoElement representa un elemento `<video>` utilizado para incrustar contenido de video de Internet en una página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/video"
+        }
+    },
+    {
+        "numero": "94",
+        "nombre": "Canvas",
+        "tag": "<canvas>",
+        "grupo": "Gráficos",
+        "color": "naranja",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<canvas>` se utiliza para dibujar gráficos, gráficos vectoriales, animaciones y más mediante JavaScript en una página web.",
+            "ejemplo": "<canvas id='miCanvas' width='400' height='200'></canvas>",
+            "interfazDOM": "La interfaz HTMLCanvasElement representa un elemento `<canvas>`. Puede ser utilizado junto con JavaScript para crear gráficos dinámicos en una página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas"
+        }
+    },
+    {
+        "numero": "95",
+        "nombre": "Gráfico SVG",
+        "tag": "<svg>",
+        "grupo": "Gráficos",
+        "color": "naranja",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<svg>` se utiliza para crear gráficos vectoriales escalables (SVG) en una página web. Puede contener formas, texto y más elementos gráficos.",
+            "ejemplo": "<svg width='100' height='100'> <circle cx='50' cy='50' r='40' stroke='black' stroke-width='3' fill='red' /> </svg>",
+            "interfazDOM": "La interfaz SVGSVGElement representa un elemento `<svg>` utilizado para crear gráficos vectoriales escalables (SVG) en una página web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/svg"
+        }
+    },
+    {
+        "numero": "96",
+        "nombre": "Mapa de Área de Imagen",
+        "tag": "<map>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<map>` se utiliza para definir áreas sensibles en una imagen de mapa de imagen. Se puede hacer clic en estas áreas para acciones específicas.",
+            "ejemplo": "<img src='mapa.jpg' alt='Mapa' usemap='#mapa-areas'> <map name='mapa-areas'> <area shape='circle' coords='50,50,30' href='lugar1.html' alt='Lugar 1'> <area shape='rect' coords='100,100,180,180' href='lugar2.html' alt='Lugar 2'> </map>",
+            "interfazDOM": "La interfaz HTMLMapElement representa un mapa de área de imagen `<map>`. Se utiliza junto con elementos `<img>` y áreas `<area>` para crear áreas sensibles en imágenes.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/map"
+        }
+    },
+    {
+        "numero": "97",
+        "nombre": "Área de Mapa de Área de Imagen",
+        "tag": "<area>",
+        "grupo": "Multimedia",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<area>` se utiliza dentro de un elemento `<map>` para definir áreas sensibles en una imagen de mapa de área de imagen.",
+            "ejemplo": "<map name='mapa-areas'> <area shape='circle' coords='50,50,30' href='lugar1.html' alt='Lugar 1'> <area shape='rect' coords='100,100,180,180' href='lugar2.html' alt='Lugar 2'> </map>",
+            "interfazDOM": "La interfaz HTMLAreaElement representa un área de mapa de área de imagen `<area>`. Debe usarse dentro de un elemento `<map>` para definir áreas sensibles.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/area"
+        }
+    },
+    {
+        "numero": "98",
+        "nombre": "Artículo",
+        "tag": "<article>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<article>` se utiliza para encapsular contenido independiente y autocontenido, como una publicación de blog o un artículo de noticias.",
+            "ejemplo": "<article> <h2>Título del artículo</h2> <p>Contenido del artículo...</p> </article>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<article>`. Se utiliza para definir contenido que es independiente y completo en sí mismo.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/article"
+        }
+    },
+    {
+        "numero": "99",
+        "nombre": "Navegación de Breadcrumbs",
+        "tag": "<nav>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "Los elementos HTML <h1> a <h6> representan seis niveles de encabezados de sección. <h1> es el nivel de sección más alto y <h6> es el más bajo. De forma predeterminada, todos los elementos de encabezado crean un cuadro a nivel de bloque en el diseño, comenzando en una nueva línea y ocupando todo el ancho disponible en el bloque que los contiene.",
+            "ejemplo": "<h5>Beetles</h5>",
+            "interfazDOM": "La interfaz HTMLHeadingElement representa los diferentes elementos de encabezado, <h1> a <h6>. Hereda métodos y propiedades de la interfaz HTMLElement.",
+            "URL": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+        }
+    },
+    {
+        "numero": "100",
+        "nombre": "Sección",
+        "tag": "<section>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<section>` se utiliza para dividir el contenido de una página web en secciones temáticas o grupos de contenido relacionado.",
+            "ejemplo": "<section> <h2>Sección 1</h2> <p>Contenido de la sección 1...</p> </section>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<section>`. Se utiliza para estructurar y organizar el contenido en secciones temáticas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/section"
+        }
+    },
+    {
+        "numero": "101",
+        "nombre": "Artículo",
+        "tag": "<article>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<article>` se utiliza para encapsular contenido independiente y autocontenido, como una publicación de blog o un artículo de noticias.",
+            "ejemplo": "<article> <h2>Título del artículo</h2> <p>Contenido del artículo...</p> </article>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<article>`. Se utiliza para definir contenido que es independiente y completo en sí mismo.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/article"
+        }
+    },
+    {
+        "numero": "102",
+        "nombre": "Encabezado",
+        "tag": "<header>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<header>` se utiliza para definir la cabecera de una sección o de la página web en general. Puede contener logotipos, títulos y más.",
+            "ejemplo": "<header> <h1>Nombre del Sitio</h1> <nav> <!-- Navegación aquí --> </nav> </header>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<header>`. Se utiliza para marcar la cabecera de una sección o de toda la página.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/header"
+        }
+    },
+    {
+        "numero": "103",
+        "nombre": "Pie de Página",
+        "tag": "<footer>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<footer>` se utiliza para definir el pie de página de una sección o de la página web en general. Contiene información de contacto, derechos de autor, etc.",
+            "ejemplo": "<footer> <p>&copy; 2023 Nombre de la Empresa</p> </footer>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<footer>`. Se utiliza para marcar el pie de página de una sección o de toda la página.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"
+        }
+    },
+    {
+        "numero": "104",
+        "nombre": "Navegación",
+        "tag": "<nav>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<nav>` se utiliza para definir una sección de navegación en una página web. Contiene enlaces a otras páginas o áreas del sitio.",
+            "ejemplo": "<nav> <ul> <li><a href='#inicio'>Inicio</a></li> <li><a href='#servicios'>Servicios</a></li> <li><a href='#contacto'>Contacto</a></li> </ul> </nav>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<nav>`. Se utiliza para marcar una sección de navegación en la página.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"
+        }
+    },
+    {
+        "numero": "105",
+        "nombre": "Menú de Navegación",
+        "tag": "<menu>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<menu>` se utiliza para definir un menú de navegación contextual o una lista de comandos en una página web o aplicación web.",
+            "ejemplo": "<menu type='context'> <li><button>Guardar</button></li> <li><button>Copiar</button></li> <li><button>Pegar</button></li> </menu>",
+            "interfazDOM": "La interfaz HTMLMenuElement representa un elemento `<menu>`. Puede utilizarse para definir menús contextuales o listas de comandos.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/menu"
+        }
+    },
+    {
+        "numero": "106",
+        "nombre": "Barra Lateral",
+        "tag": "<aside>",
+        "grupo": "Semántica",
+        "color": "morado claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<aside>` se utiliza para definir contenido relacionado pero no esencial, como una barra lateral de widgets, en una página web.",
+            "ejemplo": "<aside> <h3>Temas Relacionados</h3> <ul> <li><a href='#'>Enlace 1</a></li> <li><a href='#'>Enlace 2</a></li> <li><a href='#'>Enlace 3</a></li> </ul> </aside>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<aside>`. Se utiliza para marcar contenido relacionado pero no esencial en la página.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"
+        }
+    },
+    {
+        "numero": "107",
+        "nombre": "Marcador de Artículo",
+        "tag": "<mark>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "En desuso: esta característica ya no se recomienda. Aunque es posible que algunos navegadores aún lo admitan, es posible que ya se haya eliminado de los estándares web relevantes, que esté en proceso de eliminarse o que solo se conserve por motivos de compatibilidad. Evite usarlo y actualice el código existente si es posible; consulte la tabla de compatibilidad al final de esta página para guiar su decisión. Tenga en cuenta que esta función puede dejar de funcionar en cualquier momento.",
+            "descripción": "El elemento HTML <rb> se utiliza para delimitar el componente de texto base de una anotación <ruby>, es decir, el texto que se está anotando. Un elemento <rb> debe envolver cada segmento atómico separado del texto base.",
+            "ejemplo": "<ruby><rb>漢</rb><rb>字 </rb><rp>(</rp><rt>kan</rt><rt>ji</rt><rp>)</rp></ruby>",
+            "interfazDOM": "La interfaz HTMLElement representa cualquier elemento HTML. Algunos elementos implementan directamente esta interfaz, mientras que otros la implementan a través de una interfaz que la hereda.",
+            "URL": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb"
+        }
+    },
+    {
+        "numero": "108",
+        "nombre": "Texto Marcado",
+        "tag": "<mark>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<mark>` se utiliza para resaltar o marcar partes de texto en un documento, como términos de búsqueda resaltados o partes importantes.",
+            "ejemplo": "<p>Este es un <mark>término importante</mark> en el texto.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<mark>`. Se utiliza para resaltar partes de texto en un documento web.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/mark"
+        }
+    },
+    {
+        "numero": "109",
+        "nombre": "Lista Desordenada",
+        "tag": "<ul>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<ul>` se utiliza para crear listas desordenadas en HTML. Contiene elementos de lista `<li>` que representan los elementos de la lista.",
+            "ejemplo": "<ul> <li>Elemento 1</li> <li>Elemento 2</li> <li>Elemento 3</li> </ul>",
+            "interfazDOM": "La interfaz HTMLUListElement representa un elemento `<ul>`. Se utiliza para crear listas desordenadas con elementos de lista `<li>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/ul"
+        }
+    },
+    {
+        "numero": "110",
+        "nombre": "Lista Ordenada",
+        "tag": "<ol>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<ol>` se utiliza para crear listas ordenadas en HTML. Contiene elementos de lista `<li>` que representan los elementos de la lista.",
+            "ejemplo": "<ol> <li>Elemento 1</li> <li>Elemento 2</li> <li>Elemento 3</li> </ol>",
+            "interfazDOM": "La interfaz HTMLOListElement representa un elemento `<ol>`. Se utiliza para crear listas ordenadas con elementos de lista `<li>`.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/ol"
+        }
+    },
+    {
+        "numero": "111",
+        "nombre": "Elemento de Lista",
+        "tag": "<li>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<li>` se utiliza para representar un elemento de lista en una lista ordenada (`<ol>`) o desordenada (`<ul>`).",
+            "ejemplo": "<ul> <li>Elemento 1</li> <li>Elemento 2</li> <li>Elemento 3</li> </ul>",
+            "interfazDOM": "La interfaz HTMLLIElement representa un elemento `<li>`. Se utiliza para crear elementos de lista en listas ordenadas o desordenadas.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/li"
+        }
+    },
+    {
+        "numero": "112",
+        "nombre": "Definición de Lista",
+        "tag": "<dl>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dl>` se utiliza para crear listas de definición en HTML. Contiene pares de términos (`<dt>`) y definiciones (`<dd>`).",
+            "ejemplo": "<dl> <dt>Término 1</dt> <dd>Definición 1</dd> <dt>Término 2</dt> <dd>Definición 2</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDListElement representa un elemento `<dl>`. Se utiliza para crear listas de definición con términos y definiciones.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dl"
+        }
+    },
+    {
+        "numero": "113",
+        "nombre": "Término de Definición",
+        "tag": "<dt>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dt>` se utiliza en una lista de definición (`<dl>`) para representar un término o una etiqueta de definición.",
+            "ejemplo": "<dl> <dt>Término 1</dt> <dd>Definición 1</dd> <dt>Término 2</dt> <dd>Definición 2</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDTElement representa un elemento `<dt>`. Se utiliza para marcar los términos en una lista de definición.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dt"
+        }
+    },
+    {
+        "numero": "114",
+        "nombre": "Definición de Lista",
+        "tag": "<dd>",
+        "grupo": "Listas",
+        "color": "verde claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<dd>` se utiliza en una lista de definición (`<dl>`) para representar la definición o descripción del término asociado.",
+            "ejemplo": "<dl> <dt>Término 1</dt> <dd>Definición 1</dd> <dt>Término 2</dt> <dd>Definición 2</dd> </dl>",
+            "interfazDOM": "La interfaz HTMLDDElement representa un elemento `<dd>`. Se utiliza para marcar las definiciones en una lista de definición.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/dd"
+        }
+    },
+    {
+        "numero": "115",
+        "nombre": "Marcador de Párrafo",
+        "tag": "<p>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento HTML <noembed> es una forma obsoleta y no estándar de proporcionar contenido alternativo o 'de reserva' para navegadores que no admiten el elemento <embed> o no admiten el tipo de contenido incrustado que un autor desea utilizar. Este elemento quedó obsoleto en HTML 4.01 y versiones posteriores a favor de colocar contenido alternativo entre las etiquetas de apertura y cierre de un elemento <object>.",
+            "ejemplo": "<noembed><h1>Alternative content</h1></noembed>",
+            "interfazDOM": "",
+            "URL": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed"
+        }
+    },
+    {
+        "numero": "116",
+        "nombre": "Salto de Línea",
+        "tag": "<br>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<br>` se utiliza para realizar un salto de línea dentro de un texto. No tiene etiqueta de cierre y es un elemento de línea.",
+            "ejemplo": "Este es un<br>ejemplo de salto de línea.",
+            "interfazDOM": "La interfaz HTMLBRElement representa un elemento `<br>`. Se utiliza para forzar un salto de línea en el texto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/br"
+        }
+    },
+    {
+        "numero": "117",
+        "nombre": "Comentario",
+        "tag": "<!-- -->",
+        "grupo": "Comentarios",
+        "color": "gris",
+        "info": {
+            "advertencia": "",
+            "descripción": "Los comentarios en HTML se crean utilizando la sintaxis `<!-- comentario -->`. No se muestran en la página web y se utilizan para añadir notas o aclaraciones en el código fuente.",
+            "ejemplo": "<!-- Este es un comentario -->",
+            "interfazDOM": "Los comentarios no tienen una representación en el DOM y no afectan al contenido visible de la página.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Comentarios"
+        }
+    },
+    {
+        "numero": "118",
+        "nombre": "Elemento de Línea",
+        "tag": "<span>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<span>` se utiliza para aplicar estilos o scripts a una porción de texto en línea sin afectar a la estructura general del texto.",
+            "ejemplo": "<p>Este es un texto <span style='color: red;'>resaltado</span>.</p>",
+            "interfazDOM": "La interfaz HTMLSpanElement representa un elemento `<span>`. Se utiliza para marcar partes de texto en línea para aplicar estilos o scripts.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/span"
+        }
+    },
+    {
+        "numero": "119",
+        "nombre": "Cursiva",
+        "tag": "<i>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<i>` se utiliza para representar texto en cursiva. Sin embargo, se recomienda el uso de CSS para estilizar el texto en lugar de este elemento.",
+            "ejemplo": "<p>Este es un texto en <i>cursiva</i>.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<i>`. Se utiliza para aplicar formato de cursiva al texto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/i"
+        }
+    },
+    {
+        "numero": "120",
+        "nombre": "Negrita",
+        "tag": "<b>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<b>` se utiliza para representar texto en negrita. Al igual que `<i>`, se recomienda el uso de CSS para estilizar el texto en lugar de este elemento.",
+            "ejemplo": "<p>Este es un texto en <b>negrita</b>.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<b>`. Se utiliza para aplicar formato de negrita al texto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/b"
+        }
+    },
+    {
+        "numero": "121",
+        "nombre": "Subrayado",
+        "tag": "<u>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<u>` se utiliza para representar texto subrayado. Al igual que `<i>` y `<b>`, se recomienda el uso de CSS para estilizar el texto en lugar de este elemento.",
+            "ejemplo": "<p>Este es un texto <u>subrayado</u>.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<u>`. Se utiliza para aplicar formato de subrayado al texto.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/u"
+        }
+    },
+    {
+        "numero": "122",
+        "nombre": "Texto Pequeño",
+        "tag": "<small>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<small>` se utiliza para representar texto más pequeño y menos importante en un documento. Se recomienda su uso para textos legales y notas de pie de página.",
+            "ejemplo": "<p>Este es un <small>texto pequeño</small>.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<small>`. Se utiliza para marcar texto que debe mostrarse en un tamaño de fuente más pequeño.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/small"
+        }
+    },
+    {
+        "numero": "123",
+        "nombre": "Texto Superscrito",
+        "tag": "<sup>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<sup>` se utiliza para representar texto superscrito, como exponentes matemáticos o notas al pie. Por ejemplo, 2^3.",
+            "ejemplo": "<p>2<sup>3</sup> es igual a 8.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<sup>`. Se utiliza para marcar texto que debe mostrarse en una posición superior en relación con el texto circundante.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/sup"
+        }
+    },
+    {
+        "numero": "124",
+        "nombre": "Texto Subscrito",
+        "tag": "<sub>",
+        "grupo": "Texto",
+        "color": "azul claro",
+        "info": {
+            "advertencia": "",
+            "descripción": "El elemento `<sub>` se utiliza para representar texto subscrito, como números en una fórmula química. Por ejemplo, H2O.",
+            "ejemplo": "<p>H2O es agua.</p>",
+            "interfazDOM": "La interfaz HTMLElement representa un elemento `<sub>`. Se utiliza para marcar texto que debe mostrarse en una posición inferior en relación con el texto circundante.",
+            "URL": "https://developer.mozilla.org/es/docs/Web/HTML/Element/sub"
+        }
+    }
+]
+
