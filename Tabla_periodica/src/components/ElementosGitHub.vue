@@ -56,7 +56,7 @@ onMounted(() => {
 
         <div class="periodic-table">
             <!-- col 1 -->
-            <div v-for="post in posts" :key="post.numero" class="element" :style="{ gridColumn: post.col, gridRow: post.row}">
+            <div v-for="post in posts" :key="post.numero"  :style="{ gridColumn: post.col, gridRow: post.row}">
                 <div class="element interactivaC c1 r1">
                     <input class="activate" type="radio" name="elements" />
                     <input class="deactivate" type="radio" name="elements" />
@@ -102,7 +102,7 @@ onMounted(() => {
     grid-template-columns: repeat(17, 1fr);
     /* grid-template-rows: repeat(9, 1fr); */
     /* 17 columnas */
-    gap: 5px;
+        grid-gap: 1px;
     /* Espacio entre elementos */
     /* Agrega otros estilos según sea necesario */
 }
@@ -120,125 +120,6 @@ onMounted(() => {
         font-size: 4rem;
     }
 
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.navBar {
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Next';
-}
-
-.eTitulo {
-    color: var(--color-azul-claro);
-    font-family: 'Next';
-}
-
-.lTitulo {
-    color: var(--color-azul-rey);
-}
-
-.eTitulo2 {
-    color: var(--color-fucsia);
-}
-
-.mTitulo {
-    color: var(--color-rosa-mexicano);
-}
-
-.eTitulo3 {
-    color: var(--color-salmon);
-}
-
-.nTitulo {
-    color: var(--color-naranja);
-}
-
-.tTitulo {
-    color: var(--color-verde-limon);
-}
-
-.oTitulo {
-    color: var(--color-azul-verde);
-}
-
-.sTitulo {
-    color: var(--color-verde);
-}
-
-.footer {
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-}
-
-.documento {
-    background-color: var(--color-azul-claro)
-}
-
-.metadatos {
-    background-color: var(--color-azul-rey)
-}
-
-.listas {
-    background-color: var(--color-rosa-morado)
-}
-
-.agrupacion {
-    background-color: var(--color-fucsia)
-}
-
-.textual {
-    background-color: var(--color-rosa-mexicano)
-}
-
-.multimedia {
-    background-color: var(--color-salmon)
-}
-
-.tablas {
-    background-color: var(--color-naranja)
-}
-
-.formulario {
-    background-color: var(--color-verde-limon)
-}
-
-.scripting {
-    background-color: var(--color-verde)
-}
-
-.interactivas {
-    background-color: var(--color-azul-verde)
-}
-
-.semanticas {
-    background-color: var(--color-amarillo-naranja)
-}
-
-.ideograficas {
-    background-color: var(--color-marron)
-}
-
-.edicion {
-    background-color: var(--color-nude)
-}
-
-.obsoletas {
-    background-color: var(--color-morado-nude)
 }
 
 .wrapper {
