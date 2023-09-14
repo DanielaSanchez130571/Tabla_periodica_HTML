@@ -1,4 +1,41 @@
+<script setup>
+import { ref } from 'vue';
+import ElementosGitHub from './components/ElementosGitHub.vue'
+
+let posts = ref([])
+
+const getData = async () => {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/DanielaSanchez130571/AppyTabla/main/elementos.json')
+    posts.value = await res.json()
+    console.log(posts.value)
+  } catch (error) {
+    console.log(error)
+  } finally {
+
+  }
+}
+getData()
+
+</script>
+
 <template>
+  <ElementosGitHub v-for="post in posts" :key="numero" 
+    :numero="post.numero" 
+    :nombre="post.nombre"
+    :grupo="post.grupo" 
+  />
+  <!-- <LoadingSpinner v-if="loading" /> -->
+  <!-- <div v-else>
+    <h1>Card favorita {{ favorito }}</h1>
+    <div class="container">
+      <section class="row">
+        <Cards v-for="item in posts" :key="item.id" :title="item.title" :id="item.id" :body="item.body" 
+        @añadirFavorito="añadirFavorito"/>
+      </section>
+    </div>
+  </div> -->
+
     <body>
         <nav class="navBar">
             <h1 class="titulo">TABLA PERIÓDICA</h1>

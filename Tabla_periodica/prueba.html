@@ -2338,3 +2338,15 @@
         cursor: pointer;
     }
 </style>
+
+<script>
+    var elemento = document.querySelector('#elemento')
+
+    function traer(){
+        fetch('Tabla_periodica\public\elementos2.json')
+            .then( res => res.json())
+            .then( datos => {
+                console.log(datos)
+            })
+    }
+</script>
