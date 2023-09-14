@@ -11,6 +11,7 @@ export default {
 </script>
 
 <template>
+
     <div id="app">
     <!-- Aquí puedes agregar otros contenidos de tu aplicación si es necesario -->
     <ElementosGitHub />
@@ -1635,9 +1636,11 @@ export default {
         </main>
 
         <div class="wrapper">
-            <h3>Saber mas sobre HTML</h3>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/informacion"><h3>Saber mas sobre HTML</h3></RouterLink>
+            <RouterView />
         </div>
-
+        
         <footer class="footer">
             <p>&copy; 2023 | Kuepa | TechPower</p>
         </footer>
