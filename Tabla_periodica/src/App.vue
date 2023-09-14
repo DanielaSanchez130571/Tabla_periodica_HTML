@@ -1,34 +1,41 @@
-<script setup>
-import { ref } from 'vue';
+<script >
+
 import ElementosGitHub from './components/ElementosGitHub.vue'
 
-let posts = ref([])
-
-const getData = async () => {
-  try {
-    const res = await fetch('https://raw.githubusercontent.com/DanielaSanchez130571/AppyTabla/main/elementos.json')
-    posts.value = await res.json()
-    console.log(posts.value)
-  } catch (error) {
-    console.log(error)
-  } finally {
-
+export default {
+  components: {
+    ElementosGitHub
   }
-}
-getData()
 
+};
 </script>
 
 <template>
-  <ElementosGitHub v-for="post in posts" :key="numero" 
-    :numero="post.numero" 
-    :nombre="post.nombre"
-    :tag="post.tag"
-    :grupo="post.grupo"
-    :color="post.color" 
-  />
-  <!-- <LoadingSpinner v-if="loading" /> -->
-  <!-- <div v-else>
+    <div id="app">
+    <!-- Aquí puedes agregar otros contenidos de tu aplicación si es necesario -->
+    <ElementosGitHub />
+  </div>
+
+    <div class="key wrapper">
+        <div class="row">
+            <label class="docuemntoC categorias" for="documentosC">Documento</label>
+            <label class="metadatoC categorias" for="metadatosC">Metadatos</label>
+            <label class="listaC categorias" for="listasC">Listas</label>
+            <label class="agrupacionC categorias" for="agrupacionesC">Agrupación</label>
+            <label class="textualC categorias" for="textualesC">Textual</label>
+            <label class="multimedicaC categorias" for="multimedicasC">Multimedia</label>
+            <label class="tablaC categorias" for="tablasC">Tablas</label>
+            <label class="formularioC categorias" for="formulariosC">Formulario</label>
+            <label class="scriptingC categorias" for="scriptingsC">Scripting</label>
+            <label class="interactivaC categorias" for="interactivasC">Interactivas</label>
+            <label class="semanticaC categorias" for="semanticasC">Semánticas</label>
+            <label class="ideograficaC categorias" for="ideograficasC">Ideográficas</label>
+            <label class="edicionC categorias" for="edicionesC">Edición</label>
+            <label class="obsoletaC categorias" for="obsoletasC">Obsoletas</label>
+        </div>
+    </div>
+    <!-- <LoadingSpinner v-if="loading" /> -->
+    <!-- <div v-else>
     <h1>Card favorita {{ favorito }}</h1>
     <div class="container">
       <section class="row">
@@ -1562,7 +1569,7 @@ getData()
                             <div class="label">
                                 <div class="symbol">Dia</div>
                                 <div class="name"><code>&lt;dialog&gt;</code></div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -1601,11 +1608,11 @@ getData()
                                 <div class="name"><code>&lt;marquee&gt;</code></div>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
 
-                <!-- etiquetas de grupos -->
+            <!-- etiquetas de grupos -->
             <div class="key wrapper">
                 <div class="row">
                     <label class="docuemntoC categorias" for="documentosC">Documento</label>
