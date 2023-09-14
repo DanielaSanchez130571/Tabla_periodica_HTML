@@ -23,7 +23,9 @@ getData()
   <ElementosGitHub v-for="post in posts" :key="numero" 
     :numero="post.numero" 
     :nombre="post.nombre"
-    :grupo="post.grupo" 
+    :tag="post.tag"
+    :grupo="post.grupo"
+    :color="post.color" 
   />
   <!-- <LoadingSpinner v-if="loading" /> -->
   <!-- <div v-else>
@@ -1560,6 +1562,7 @@ getData()
                             <div class="label">
                                 <div class="symbol">Dia</div>
                                 <div class="name"><code>&lt;dialog&gt;</code></div>
+                                
                             </div>
                         </div>
                     </div>
