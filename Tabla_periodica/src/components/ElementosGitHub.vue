@@ -24,56 +24,57 @@ onMounted(() => {
         :grupo="post.grupo" :color="post.color" / -->
 
 <template>
-    <div class="wrapper">
-        <input class="categorias-t" type="radio" id="documentosC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="metadatosC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="listasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="agrupacionesC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="textualesC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="multimedicasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="tablasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="formulariosC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="scriptingsC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="interactivasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="semanticasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="ideograficasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="edicionesC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
-        <input class="categorias-t" type="radio" id="obsoletasC" name="categories" />
-        <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+    <main>
+        <div class="wrapper">
+            <input class="categorias-t" type="radio" id="documentosC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="metadatosC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="listasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="agrupacionesC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="textualesC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="multimedicasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="tablasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="formulariosC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="scriptingsC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="interactivasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="semanticasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="ideograficasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="edicionesC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
+            <input class="categorias-t" type="radio" id="obsoletasC" name="categories" />
+            <input class="categorias-cancel" type="radio" id="cancel" name="categories" />
 
-        <div class="periodic-table">
-            <!-- col 1 -->
-            <div v-for="post in posts" :key="post.numero"  :style="{ gridColumn: post.col, gridRow: post.row}">
-                <div class="element interactivaC c1 r1">
-                    <input class="activate" type="radio" name="elements" />
-                    <input class="deactivate" type="radio" name="elements" />
-                    <div class="overlay"></div>
-                    <div class="square" :style="{ background:post.color }">
-                        <div class="atomic-number">{{ post.numero }}</div>
-                        <div class="label">
-                            <div class="symbol">{{ post.nombre }}</div>
-                            <div class="name">{{ post.tag }}</div>
-                            <div class="grupo">{{ post.grupo }}</div>
+            <div class="periodic-table">
+                <div v-for="post in posts" :style="{ gridColumn: post.col, gridRow: post.row }">
+                    <div class="element c1 r1" :class="post.clasificacion" >
+                        <input class="activate" type="radio" name="elements" />
+                        <input class="deactivate" type="radio" name="elements" />
+                        <div class="overlay"></div>
+                        <div class="square"  :style="{ background: post.color }">
+                            <div class="atomic-number">{{ post.numero }}</div>
+                            <div class="label">
+                                <div class="symbol">{{ post.nombre }}</div>
+                                <div class="name">{{ post.tag }}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
+
+    </main>
 </template>
 
 <style>
@@ -102,7 +103,7 @@ onMounted(() => {
     grid-template-columns: repeat(17, 1fr);
     /* grid-template-rows: repeat(9, 1fr); */
     /* 17 columnas */
-        grid-gap: 1px;
+    grid-gap: 1px;
     /* Espacio entre elementos */
     /* Agrega otros estilos según sea necesario */
 }
