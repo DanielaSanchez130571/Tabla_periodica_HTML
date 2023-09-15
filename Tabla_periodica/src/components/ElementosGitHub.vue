@@ -101,26 +101,7 @@ onMounted(() => {
 .element-grid {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
-    /* grid-template-rows: repeat(9, 1fr); */
-    /* 17 columnas */
     grid-gap: 1px;
-    /* Espacio entre elementos */
-    /* Agrega otros estilos según sea necesario */
-}
-
-@font-face {
-    font-family: 'Next';
-    src: url('./assets/tipografias/NexaRustSlab-Trial-BlackShadow3.ttf') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 4rem;
-    }
-
 }
 
 .wrapper {
@@ -244,11 +225,6 @@ code {
     outline: none;
     cursor: auto;
 }
-
-/* .element input[type="radio"].activate:checked~.square .label {
-        transition-duration: 500ms;
-        transform: scale(0.75);
-    } */
 
 .element input[type="radio"].activate:checked~.square {
     opacity: 1;
