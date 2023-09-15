@@ -17,6 +17,9 @@ const getData = async () => {
 onMounted(() => {
     getData();
 });
+
+
+
 </script>
 
 
@@ -70,6 +73,17 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
+                <!-- <div>
+                    <b-button @click="showModal" ref="btnShow">Open Modal</b-button>
+                    <b-button @click="toggleModal" ref="btnToggle">Toggle Modal</b-button>
+
+                    <b-modal id="modal-1">
+                        <div class="d-block">Hello From My Modal!</div>
+                        <b-button @click="hideModal">Close Me</b-button>
+                        <b-button @click="toggleModal">Toggle Me</b-button>
+                    </b-modal>
+                </div> -->
+
             </div>
 
         </div>
@@ -571,21 +585,21 @@ code {
     user-select: none;
 }
 
-.key .row {
+.key .raw {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.key .row label {
+.key .raw label {
     opacity: 0.85;
     cursor: pointer;
     transition: 120ms;
     pointer-events: all;
 }
 
-.key .row label:hover {
+.key .raw label:hover {
     opacity: 1 !important;
 }
 
@@ -593,6 +607,7 @@ code {
     background-color: var(--color-gris);
     padding: 10px;
     border-radius: 10px;
+
 }
 
 .docuemntoC:hover {

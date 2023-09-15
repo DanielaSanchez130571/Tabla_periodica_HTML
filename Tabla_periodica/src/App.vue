@@ -32,7 +32,7 @@ export default {
         </div>
 
         <div class="key wrapper">
-                <div class="row">
+                <div class="raw ">
                     <label class="docuemntoC categorias" for="documentosC">Documento</label>
                     <label class="metadatoC categorias" for="metadatosC">Metadatos</label>
                     <label class="listaC categorias" for="listasC">Listas</label>
