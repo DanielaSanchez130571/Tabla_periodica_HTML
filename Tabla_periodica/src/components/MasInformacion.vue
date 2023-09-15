@@ -2,6 +2,7 @@
     <div class="informacion">
         <h1>¿Qué es HTML?</h1>
         <p>HTML (HyperText Markup Language) es un lenguaje de marcado utilizado para crear la estructura y el contenido de páginas web. Se trata de un lenguaje de programación ligero y esencialmente un estándar de la World Wide Web (WWW) que permite a los desarrolladores web definir la estructura y organización de una página web mediante etiquetas y elementos.</p>
+        <br>
         <p>Aquí hay algunas características clave de HTML:</p>
         <ul>
             <li>Marcado de contenido: HTML se utiliza para marcar o etiquetar el contenido de una página web. Esto significa que se utilizan etiquetas HTML para definir qué parte del contenido es un encabezado, un párrafo, una lista, una imagen, un enlace y más.</li>

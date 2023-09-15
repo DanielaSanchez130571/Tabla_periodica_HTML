@@ -57,11 +57,11 @@ onMounted(() => {
 
             <div class="periodic-table">
                 <div v-for="post in posts" :style="{ gridColumn: post.col, gridRow: post.row }">
-                    <div class="element c1 r1" :class="post.clasificacion" >
+                    <div class="element c1 r1" :class="post.clasificacion">
                         <input class="activate" type="radio" name="elements" />
                         <input class="deactivate" type="radio" name="elements" />
                         <div class="overlay"></div>
-                        <div class="square"  :style="{ background: post.color }">
+                        <div class="square" :style="{ background: post.color }">
                             <div class="atomic-number">{{ post.numero }}</div>
                             <div class="label">
                                 <div class="symbol">{{ post.nombre }}</div>
@@ -101,7 +101,7 @@ onMounted(() => {
 .element-grid {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
-    grid-gap: 1px;
+    grid-gap: 12px;
 }
 
 .wrapper {
@@ -132,7 +132,8 @@ onMounted(() => {
 
 .element {
     position: relative;
-    font-size: 0.5vw;
+    font-size: 16px;
+    /* Cambia 0.5vw por el tamaño de fuente en píxeles para dispositivos móviles */
     padding-bottom: 100%;
     cursor: pointer;
     color: var(--color-blanco);
@@ -170,6 +171,7 @@ onMounted(() => {
 
 .element .atomic-number {
     position: center;
+    font-size: 10px;
 }
 
 .element .label {
@@ -177,11 +179,11 @@ onMounted(() => {
 }
 
 .element .symbol {
-    font-size: 1.7vw;
+    font-size: 20px;
 }
 
 .element .name {
-    font-size: 0.7vw;
+    font-size: 13px;
 }
 
 code {
@@ -220,8 +222,6 @@ code {
 .element input[type="radio"].activate:checked~.square {
     z-index: 3;
     transform: scale(3);
-    transition-duration: 500ms, 0ms, 200ms, 200ms, 200ms, 200ms;
-    transition-delay: 0ms;
     outline: none;
     cursor: auto;
 }
@@ -430,8 +430,10 @@ code {
         position: relative;
         overflow: hidden;
         padding: 2%;
-        width: 85%;
-        margin-left: 5%;
+        width: 95%;
+        /* Ajusta el ancho al 95% del viewport */
+        margin: 0 auto;
+        /* Centra el contenido horizontalmente */
         margin-top: 3%;
     }
 
@@ -446,31 +448,11 @@ code {
         pointer-events: none;
     }
 
-    .periodic-table {
-        display: grid;
-        grid-gap: 12px;
-        grid-template-columns: repeat(17, 1fr);
-    }
 
     .element {
         position: relative;
-        font-size: 0.5vw;
-        padding-bottom: 100%;
         cursor: pointer;
         color: var(--color-blanco);
-        transition: 500ms;
-    }
-
-    .element .overlay {
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: var(--color-negro);
-        opacity: 0;
-        pointer-events: none;
         transition: 500ms;
     }
 
@@ -478,8 +460,8 @@ code {
         position: absolute;
         left: 10%;
         top: 0;
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
         box-sizing: border-box;
         color: var(--color-negro);
@@ -487,25 +469,21 @@ code {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .element .atomic-number {
         position: center;
-        font-size: 5vw;
-    }
-
-    .element .label {
-        text-align: center;
+        font-size: 40%;
     }
 
     .element .symbol {
-        font-size: 20vw;
+        font-size: 60%;
     }
 
     .element .name {
-        font-size: 5vw;
+        font-size: 40%;
     }
+
 
     .r1 input[type="radio"].activate:checked~.square {
         top: 80%;
@@ -523,6 +501,7 @@ code {
         left: -80%;
     }
 }
+
 
 @keyframes fade-in {
     from {
