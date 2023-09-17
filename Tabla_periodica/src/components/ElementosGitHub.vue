@@ -70,15 +70,16 @@ export default {
                                 <p>
                                     Ejemplo: <br>
                                     <code style="color: black; font-weight: 600;">&lt;
-                                            {{ post.info.ejemplo }}
-                                            &gt;</code>
+                                                        {{ post.info.ejemplo }}
+                                                        &gt;</code>
                                 </p>
                             </div>
                             <p>Interfaz: {{ post.info.interfazDOM }}</p>
                             <p>Referencia: {{ post.info.URL }}</p>
                         </div>
                         <div class="modal-footer ">
-                            <button type="button" class="btn " data-bs-dismiss="modal" :style="{ backgroundColor: post.color }">Cerrar</button>
+                            <button type="button" class="btn " data-bs-dismiss="modal"
+                                :style="{ backgroundColor: post.color }">Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -361,5 +362,34 @@ export default {
 
 .r10 {
     grid-row: 10;
-}</style>
+}
+
+/* Media Query para  mobil */
+
+@media screen and (max-width: 767px) {
+    .grid-tabla {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .btn-elemento {
+        width: 80%;
+        height: 65px;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-tabla {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-elemento {
+        width: 100%;
+        height: 80px;
+    }
+}
+</style>
 
