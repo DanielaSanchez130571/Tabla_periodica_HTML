@@ -4,34 +4,40 @@ import ElementosGitHub from './components/ElementosGitHub.vue'
 
 export default {
     components: {
-        ElementosGitHub
+        ElementosGitHub,
     }
 
 };
+
+
 </script>
 
 <template>
     <body>
-        <nav class="navBar">
-            <h1 class="titulo">TABLA PERIÓDICA</h1>
-            <h1 class="titulo">
-                <span class="eTitulo">E</span>
-                <span class="lTitulo">L</span>
-                <span class="eTitulo2">E</span>
-                <span class="mTitulo">M</span>
-                <span class="eTitulo3">E</span>
-                <span class="nTitulo">N</span>
-                <span class="tTitulo">T</span>
-                <span class="oTitulo">O</span>
-                <span class="sTitulo">S</span> HTML
+        <nav class="fondo-negro text-center">
+        <div class="container-fluid">
+            <h1 class="titulo display-4 pt-3">TABLA PERIODICA</h1>
+        </div>
+        <div class="container-fluid">
+            <h1 class="titulo display-4 pb-3">
+                <span class="titulo__E">E</span>
+                <span class="titulo__L">L</span>
+                <span class="titulo__E_2">E</span>
+                <span class="titulo__M">M</span>
+                <span class="titulo__E_3">E</span>
+                <span class="titulo__N">N</span>
+                <span class="titulo__T">T</span>
+                <span class="titulo__O">O</span>
+                <span class="titulo__S">S</span> HTML
             </h1>
-        </nav>
+        </div>
+    </nav>
 
         <div id="app">
             <ElementosGitHub />
         </div>
 
-        <div class="key wrapper">
+        <!-- <div class="key wrapper">
                 <div class="raw ">
                     <label class="docuemntoC categorias" for="documentosC">Documento</label>
                     <label class="metadatoC categorias" for="metadatosC">Metadatos</label>
@@ -48,7 +54,7 @@ export default {
                     <label class="edicionC categorias" for="edicionesC">Edición</label>
                     <label class="obsoletaC categorias" for="obsoletasC">Obsoletas</label>
                 </div>
-            </div>
+            </div> -->
 
         <div class="wrapper">
             <RouterLink to="/">Home</RouterLink>

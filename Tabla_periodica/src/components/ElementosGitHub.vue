@@ -1,53 +1,90 @@
-<script setup>
+<script>
 import { ref, onMounted } from 'vue';
+import { Modal } from 'bootstrap'; // Importa el módulo Modal de Bootstrap
 
-const posts = ref([]);
+export default {
+    setup() {
+        const posts = ref([]);
 
-const getData = async () => {
-    try {
-        const res = await fetch('https://raw.githubusercontent.com/DanielaSanchez130571/AppyTabla/main/elementos.json');
-        const data = await res.json();
-        posts.value = data;
-        console.log(posts.value);
-    } catch (error) {
-        console.error(error);
-    }
+        const getData = async () => {
+            try {
+                const res = await fetch('https://raw.githubusercontent.com/DanielaSanchez130571/AppyTabla/main/elementos.json');
+                const data = await res.json();
+                posts.value = data;
+                console.log(posts.value);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        onMounted(() => {
+            getData();
+        });
+
+        // Función para abrir el modal
+        const openModal = (index) => {
+            const modal = new Modal(document.getElementById(`modalInfo${index}`));
+            modal.show();
+        };
+
+        return {
+            posts,
+            openModal, // Asegúrate de exponer la función openModal en el objeto de retorno
+        };
+    },
 };
-
-onMounted(() => {
-    getData();
-});
-
-
-
 </script>
 
 
-    <!-- <ElementosGitHub v-for="post in posts" :key="numero" :numero="post.numero" :nombre="post.nombre" :tag="post.tag"
-        :grupo="post.grupo" :color="post.color" / -->
+
 
 <template>
-    <main>
-            <!-- <div class="periodic-table">
-                <div v-for="post in posts" :style="{ gridColumn: post.col, gridRow: post.row }">
-                    <div class="element c1 r1" :class="post.clasificacion">
-                        <input class="activate" type="radio" name="elements" />
-                        <input class="deactivate" type="radio" name="elements" />
-                        <div class="overlay"></div>
-                        <div class="square" :style="{ background: post.color }">
-                            <div class="atomic-number">{{ post.numero }}</div>
-                            <div class="label">
-                                <div class="symbol">{{ post.nombre }}</div>
-                                <div class="name">{{ post.tag }}</div>
+    <section class="grid-tabla section-tabla wrapper ">
+        <div class="div-elemento" v-for="(post, index) in posts" :style="{ gridColumn: post.col, gridRow: post.row }"
+            :key="index">
+            <div class="grid-item">
+                <div class="element">
+                    <button type="button" :class="post.clasificacion" :data-bs-target="'#modalInfo' + index"
+                        class="btn-elemento" @click="openModal(index)">
+                        <div class="element-number">{{ post.numero }}</div>
+                        <div class="label">
+                            <div class="nombre">{{ post.nombre }}</div>
+                            <div class="tag">{{ post.tag }}</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="modal fade" :id="'modalInfo' + index" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-elemento">
+                    <div class="modal-content">
+                        <div class="modal-header " :style="{ backgroundColor: post.color }">
+                            <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Nombre: {{ post.nombre }}</p>
+                            <p>Tag:{{ post.tag }}</p>
+                            <p>Grupo: {{ post.grupo }}</p>
+                            <div>
+                                <p>
+                                    Ejemplo:
+                                    <code style="color: black; font-weight: 600;">&lt;
+                                            {{ post.info.ejemplo }}
+                                            &gt;</code>
+                                </p>
                             </div>
+                            <p>Interfaz: {{ post.info.interfazDOM }}</p>
+                            <p>Referencia: {{ post.info.URL }}</p>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
-            </div> -->
-
-    
-
-    </main>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style>
@@ -71,299 +108,258 @@ onMounted(() => {
     --color-blanco: #fdfdfd;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
-}
-
-/* Navbar */
-.titulo{
-    color: var(--color-blanco);
-    text-align: center;
-    line-height: 1.5;
-}
-
-.fondo-negro{
-    background-color: var(--color-negro); 
-    margin-bottom: 30px; 
-}
-
-.titulo__E{
-    color: var(--color-azul-claro);
-}
-
-.titulo__L{
-    color: var(--color-azul-rey);
-}
-
-.titulo__E_2{
-    color: var(--color-fucsia);
-}
-
-.titulo__M{
-    color: var(--color-rosa-mexicano);
-}
-
-.titulo__E_3{
-    color: var(--color-salmon);
-}
-
-.titulo__N{
-    color: var(--color-naranja);
-}
-
-.titulo__T{
-    color: var(--color-verde-limon);
-}
-
-.titulo__O{
-    color: var(--color-azul-verde);
-}
-
-.titulo__S{
-    color: var(--color-verde);
-}
-
 /* Elemento */
+
+.btn-elemento {
+    width: 65px;
+    height: 65px;
+}
 
 .element {
     position: relative;
     cursor: pointer;
     transition: 500ms;
+    box-sizing: border-box;
 }
 
-.element-number{
+.element-number {
     font-size: 8px;
     color: var(--color-negro);
 }
 
-.nombre{
+.nombre {
     font-size: 14px;
     color: var(--color-negro);
 }
 
-.tag{
-    font-size: 12px;
+.tag {
+    font-size: 10px;
 }
 
 /* Grupos */
 
-.documento {
+.documentoC {
     background-color: var(--color-azul-claro);
     border-color: var(--color-azul-claro);
     border-radius: 10px;
 }
 
-.metadatos {
+.metadatoC {
     background-color: var(--color-azul-rey);
     border-color: var(--color-azul-rey);
     border-radius: 10px;
-    
+
 }
 
-.listas {
+.listaC {
     background-color: var(--color-rosa-morado);
     border-color: var(--color-rosa-morado);
     border-radius: 10px;
 }
 
-.agrupacion {
+.agrupacionC {
     background-color: var(--color-fucsia);
     border-color: var(--color-fucsia);
     border-radius: 10px;
 }
 
-.textual {
+.textualC {
     background-color: var(--color-rosa-mexicano);
     border-color: var(--color-rosa-mexicano);
     border-radius: 10px;
 }
 
-.multimedia {
+.multimedicaC {
     background-color: var(--color-salmon);
     border-color: var(--color-salmon);
     border-radius: 10px;
 }
 
-.tablas {
+.tablaC {
     background-color: var(--color-naranja);
     border-color: var(--color-naranja);
     border-radius: 10px;
 }
 
-.formulario {
+.formularioC {
     background-color: var(--color-verde-limon);
     border-color: var(--color-verde-limon);
     border-radius: 10px;
 }
 
-.scripting {
+.scriptingC {
     background-color: var(--color-verde);
     border-color: var(--color-verde);
     border-radius: 10px;
 }
 
-.interactivas {
+.interactivaC {
     background-color: var(--color-azul-verde);
     border-color: var(--color-azul-verde);
     border-radius: 10px;
 }
 
-.semanticas {
+.semanticaC {
     background-color: var(--color-amarillo-naranja);
     border-color: var(--color-amarillo-naranja);
     border-radius: 10px;
 }
 
-.ideograficas {
+.ideograficaC {
     background-color: var(--color-marron);
     border-color: var(--color-marron);
     border-radius: 10px;
 }
 
-.edicion {
+.edicioneC {
     background-color: var(--color-nude);
     border-color: var(--color-nude);
     border-radius: 10px;
 }
 
-.obsoletas {
+.obsoletaC {
     background-color: var(--color-morado-nude);
     border-color: var(--color-morado-nude);
     border-radius: 10px;
 }
 
 /* Modal */
-.modal-referencia{
+.modal-referencia {
     font-size: 10px;
 }
-.modal-elemento{
+
+.modal-elemento {
     text-align: justify;
     font-size: 14px;
 }
 
 /* Grid  */
 
-.section-tabla{
+.section-tabla {
     margin-left: 5%;
     margin-right: 5%;
-    
+
 }
 
 .section-tabla {
     flex: 1;
 }
 
-.grid-tabla{
+.grid-tabla {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     grid-gap: 10px;
 }
 
-.grid-item{
+.grid-item {
     text-align: center;
 }
 
 .c1 {
-    grid-column: 1; 
+    grid-column: 1;
 }
+
 .c2 {
-    grid-column: 2; 
+    grid-column: 2;
 }
+
 .c3 {
-    grid-column: 3; 
+    grid-column: 3;
 }
+
 .c4 {
-    grid-column: 4; 
+    grid-column: 4;
 }
+
 .c5 {
-    grid-column: 5; 
+    grid-column: 5;
 }
+
 .c6 {
-    grid-column: 6; 
+    grid-column: 6;
 }
+
 .c7 {
-    grid-column: 7; 
+    grid-column: 7;
 }
+
 .c8 {
-    grid-column: 8; 
+    grid-column: 8;
 }
+
 .c9 {
-    grid-column: 9; 
+    grid-column: 9;
 }
+
 .c10 {
-    grid-column: 10; 
+    grid-column: 10;
 }
+
 .c11 {
-    grid-column: 11; 
+    grid-column: 11;
 }
+
 .c12 {
-    grid-column: 12; 
+    grid-column: 12;
 }
+
 .c13 {
-    grid-column: 13; 
+    grid-column: 13;
 }
+
 .c14 {
-    grid-column: 14; 
+    grid-column: 14;
 }
+
 .c15 {
-    grid-column: 15; 
+    grid-column: 15;
 }
+
 .c16 {
-    grid-column: 16; 
+    grid-column: 16;
 }
+
 .c17 {
-    grid-column: 17; 
+    grid-column: 17;
 }
 
 .r1 {
     grid-row: 1;
 }
+
 .r2 {
     grid-row: 2;
 }
+
 .r3 {
     grid-row: 3;
 }
+
 .r4 {
     grid-row: 4;
 }
+
 .r5 {
     grid-row: 5;
 }
+
 .r6 {
     grid-row: 6;
 }
+
 .r7 {
     grid-row: 7;
 }
+
 .r8 {
     grid-row: 8;
 }
+
 .r9 {
     grid-row: 9;
 }
+
 .r10 {
     grid-row: 10;
-}
-
-/* Footer */
-.div-footer{
-    background-color: var(--color-negro);
-    margin-top: 30px;
-}
-
-.texto-footer{
-    color: var(--color-blanco);
-    
-}
-
-.link-footer {
-    text-decoration: none; /* Elimina la decoración de subrayado */
-    color: inherit; /* Hereda el color del texto del elemento padre (en este caso, blanco) */
-}
-
-</style>
+}</style>
 
