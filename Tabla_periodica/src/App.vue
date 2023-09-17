@@ -56,7 +56,7 @@ export default {
                 </div>
             </div> -->
 
-        <div class="wrapper">
+        <div class="wrapper container">
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/informacion">
                 <h3>Saber mas sobre HTML</h3>

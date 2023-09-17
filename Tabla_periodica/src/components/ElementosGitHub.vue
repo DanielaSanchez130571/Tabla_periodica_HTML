@@ -68,7 +68,7 @@ export default {
                             <p>Grupo: {{ post.grupo }}</p>
                             <div>
                                 <p>
-                                    Ejemplo:
+                                    Ejemplo: <br>
                                     <code style="color: black; font-weight: 600;">&lt;
                                             {{ post.info.ejemplo }}
                                             &gt;</code>
@@ -78,7 +78,7 @@ export default {
                             <p>Referencia: {{ post.info.URL }}</p>
                         </div>
                         <div class="modal-footer ">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn " data-bs-dismiss="modal" :style="{ backgroundColor: post.color }">Cerrar</button>
                         </div>
                     </div>
                 </div>
