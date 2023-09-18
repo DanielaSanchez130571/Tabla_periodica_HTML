@@ -35,9 +35,6 @@ export default {
 };
 </script>
 
-
-
-
 <template>
     <section class="grid-tabla section-tabla wrapper ">
         <div class="div-elemento" v-for="(post, index) in posts" :style="{ gridColumn: post.col, gridRow: post.row }"
@@ -70,12 +67,12 @@ export default {
                                 <p>
                                     Ejemplo: <br>
                                     <code style="color: black; font-weight: 600;">&lt;
-                                                        {{ post.info.ejemplo }}
-                                                        &gt;</code>
+                                                            {{ post.info.ejemplo }}
+                                                            &gt;</code>
                                 </p>
                             </div>
                             <p>Interfaz: {{ post.info.interfazDOM }}</p>
-                            <p>Referencia: {{ post.info.URL }}</p>
+                            <p>Referencia: <br>{{ post.info.URL }}</p>
                         </div>
                         <div class="modal-footer ">
                             <button type="button" class="btn " data-bs-dismiss="modal"
