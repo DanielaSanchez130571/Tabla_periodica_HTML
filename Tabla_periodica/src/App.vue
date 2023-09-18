@@ -1,5 +1,5 @@
 <script >
-
+import { RouterLink, RouterView } from 'vue-router';
 import ElementosGitHub from './components/ElementosGitHub.vue'
 
 export default {
@@ -40,14 +40,16 @@ export default {
 
             <br><br>
 
-        <div class="wrapper container">
+         <div class="wrapper container">
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/informacion">
                 <h3>Saber mas sobre HTML</h3>
             </RouterLink>
             <RouterView />
-        </div>
-
+        </div> 
+        
+       
+        <br>
         <footer class="text-center py-4 div-footer text-white">
             <div class="container">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
