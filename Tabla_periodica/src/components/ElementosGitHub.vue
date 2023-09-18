@@ -64,12 +64,12 @@ export default {
                             <p>Tag:{{ post.tag }}</p>
                             <p>Grupo: {{ post.grupo }}</p>
                             <div>
-                                <p>
-                                    Ejemplo: <br>
-                                    <code style="color: black; font-weight: 600;">&lt;
+                                <p> Ejemplo: </p>
+                                <p class="text-center">
+                                    <code style="color: black; font-weight: 600;" >
                                                             {{ post.info.ejemplo }}
-                                                            &gt;</code>
-                                </p>
+                                                           </code>
+                                                        </p>
                             </div>
                             <p>Interfaz: {{ post.info.interfazDOM }}</p>
                             <p>Referencia: <br>{{ post.info.URL }}</p>
