@@ -1,13 +1,13 @@
 <script >
 
-import ElementosGitHub from './components/ElementosGitHub.vue'
+// import ElementosGitHub from './components/ElementosGitHub.vue'
 
-export default {
-    components: {
-        ElementosGitHub,
-    }
+// export default {
+//     components: {
+//         ElementosGitHub,
+//     }
 
-};
+// };
 
 
 </script>
@@ -16,7 +16,7 @@ export default {
     <body>
         <nav class="fondo-negro text-center">
             <div class="container-fluid">
-                <h1 class="titulo display-4 pt-3">TABLA PERIODICA</h1>
+                <h1 class="titulo display-4 pt-3">TABLA PERIÓDICA</h1>
             </div>
             <div class="container-fluid">
                 <h1 class="titulo display-4 pb-3">
@@ -34,17 +34,17 @@ export default {
         </nav>
 
 
-            <div id="app">
-                <ElementosGitHub />
-            </div>
-
-            <br><br>
+            
 
         <div class="wrapper container">
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/"></RouterLink>
             <RouterLink to="/informacion">
-                <h3>Saber mas sobre HTML</h3>
+                <h3>¿Qué es HTML?</h3>
             </RouterLink>
+            <RouterLink to="/app">
+                <h3>Tabla interactiva</h3>
+            </RouterLink>
+            
             <RouterView />
         </div>
 

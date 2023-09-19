@@ -2,6 +2,8 @@
 import { ref, onMounted } from 'vue';
 import { Modal } from 'bootstrap'; // Importa el módulo Modal de Bootstrap
 
+
+
 export default {
     setup() {
         const posts = ref([]);
@@ -36,53 +38,55 @@ export default {
 </script>
 
 <template>
-    <section class="grid-tabla section-tabla wrapper ">
-        <div class="div-elemento" v-for="(post, index) in posts" :style="{ gridColumn: post.col, gridRow: post.row }"
-            :key="index">
-            <div class="grid-item">
-                <div class="element">
-                    <button type="button" :class="post.clasificacion" :data-bs-target="'#modalInfo' + index"
-                        class="btn-elemento" @click="openModal(index)">
-                        <div class="element-number">{{ post.numero }}</div>
-                        <div class="label">
-                            <div class="nombre">{{ post.nombre }}</div>
-                            <div class="tag">{{ post.tag }}</div>
-                        </div>
-                    </button>
-                </div>
-            </div>
-            <div class="modal fade" :id="'modalInfo' + index" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-elemento">
-                    <div class="modal-content">
-                        <div class="modal-header " :style="{ backgroundColor: post.color }">
-                            <h5 class="modal-title" id="exampleModalLabel"> </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Nombre: {{ post.nombre }}</p>
-                            <p>Tag:{{ post.tag }}</p>
-                            <p>Grupo: {{ post.grupo }}</p>
-                            <div>
-                                <p> Ejemplo: </p>
-                                <p class="text-center">
-                                    <code style="color: black; font-weight: 600;" >
-                                                            {{ post.info.ejemplo }}
-                                                           </code>
-                                                        </p>
+    <div class="app">
+        <section class="grid-tabla section-tabla wrapper ">
+            <div class="div-elemento" v-for="(post, index) in posts" :style="{ gridColumn: post.col, gridRow: post.row }"
+                :key="index">
+                <div class="grid-item">
+                    <div class="element">
+                        <button type="button" :class="post.clasificacion" :data-bs-target="'#modalInfo' + index"
+                            class="btn-elemento" @click="openModal(index)">
+                            <div class="element-number">{{ post.numero }}</div>
+                            <div class="label">
+                                <div class="nombre">{{ post.nombre }}</div>
+                                <div class="tag">{{ post.tag }}</div>
                             </div>
-                            <p>Interfaz: {{ post.info.interfazDOM }}</p>
-                            <p>Referencia: <br>{{ post.info.URL }}</p>
-                        </div>
-                        <div class="modal-footer ">
-                            <button type="button" class="btn " data-bs-dismiss="modal"
-                                :style="{ backgroundColor: post.color }">Cerrar</button>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" :id="'modalInfo' + index" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-elemento">
+                        <div class="modal-content">
+                            <div class="modal-header " :style="{ backgroundColor: post.color }">
+                                <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Nombre: {{ post.nombre }}</p>
+                                <p>Tag:{{ post.tag }}</p>
+                                <p>Grupo: {{ post.grupo }}</p>
+                                <div>
+                                    <p> Ejemplo: </p>
+                                    <p class="text-center">
+                                        <code style="color: black; font-weight: 600;" >
+                                                                {{ post.info.ejemplo }}
+                                                            </code>
+                                                            </p>
+                                </div>
+                                <p>Interfaz: {{ post.info.interfazDOM }}</p>
+                                <p>Referencia: <br>{{ post.info.URL }}</p>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn " data-bs-dismiss="modal"
+                                    :style="{ backgroundColor: post.color }">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <style>
@@ -367,7 +371,6 @@ export default {
     .grid-tabla {
         display: flex;
         flex-direction: column;
-
     }
 
     .btn-elemento {
