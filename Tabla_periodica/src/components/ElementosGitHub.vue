@@ -130,7 +130,8 @@ export default {
 }
 
 .nombre {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
     color: var(--color-negro);
 }
 
