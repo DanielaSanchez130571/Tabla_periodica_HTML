@@ -113,8 +113,8 @@ export default {
 /* Elemento */
 
 .btn-elemento {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
 }
 
 .element {
@@ -125,7 +125,7 @@ export default {
 }
 
 .element-number {
-    font-size: 8px;
+    font-size: 9px;
     color: var(--color-negro);
 }
 
@@ -239,8 +239,8 @@ export default {
 /* Grid  */
 
 .section-tabla {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 5%
 
 }
 
@@ -251,7 +251,7 @@ export default {
 .grid-tabla {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .grid-item {
