@@ -81,18 +81,32 @@
     --color-blanco: #fdfdfd;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('./src/assets/tipografias/Rubik_80s_Fade/Rubik80sFade-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./src/assets/tipografias/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    font-family: 'Montserrat';
 }
 
 /* Navbar */
+
+
 .titulo {
     color: var(--color-blanco);
     text-align: center;
     line-height: 1.5;
+    font-family: 'Rubik'
 }
 
 .fondo-negro {
