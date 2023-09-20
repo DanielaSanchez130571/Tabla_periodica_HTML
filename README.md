@@ -1,6 +1,6 @@
 # Tabla Periodica de Elementos de HTLM
 
----
+https://tabla-elementos-html.netlify.app
 
 ### Guía de Estilos:
 
@@ -11,12 +11,10 @@
 
 https://www.figma.com/file/CT0iQ2YJitLQJZKH5jddpC/Tabla-de-etiquetas-HTML?type=design&node-id=0%3A1&mode=design&t=SZkZHV2fcg3EteWr-1
 
----
-2023 | Kuepa 
-=======
-# Tabla_periodica_HTML
+
 Integrantes:
-Daniela Heredia (https://github.com/DanHT22)
-Daniela M. Sánchez (https://github.com/DanielaSanchez130571)
-Florinda Hernandez (https://github.com/florhde)Re
->>>>>>> prueba2
+- Daniela Heredia (https://github.com/DanHT22)
+- Daniela M. Sánchez (https://github.com/DanielaSanchez130571)
+
+---
+2023 | Kuepa TechPower | Equipo 4
