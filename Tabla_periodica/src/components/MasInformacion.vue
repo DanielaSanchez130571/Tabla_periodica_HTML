@@ -1,12 +1,22 @@
 <template>
-  <div class="informacion">
-    <h1>LENGUAJE DE ETIQUETAS DE HIPERTEXTO </h1>
-    <p>HTML, cuya sigla proviene del inglés "HyperText Markup Language" (Lenguaje de Marcado de Hipertexto), representa el componente fundamental de la World Wide Web. Para comprender su esencia, desglosemos sus elementos constituyentes:
+  <div class="informacion container">
+    <h1 class="text-center mt-3">
+      <strong>
+        <span class="titulo__L">LENGUAJE</span>
+        <span class="titulo__M"> DE</span>
+        <span class="titulo__N "> ETIQUETAS</span>
+        <span class="titulo__O"> DE</span>
+        <span class="titulo__S"> HIPERTEXTO</span>
+      </strong>
+    </h1>
+    <p class="mt-5">HTML, cuya sigla proviene del inglés "HyperText Markup Language" (Lenguaje de Marcado de Hipertexto),
+      representa el componente fundamental de la World Wide Web. Para comprender su esencia, desglosemos sus elementos
+      constituyentes:
     </p>
     <ul>
-      <li><strong> Hipertexto (Hypertext):</strong>Este término se refiere a texto, generalmente en forma de enlaces, que
+      <li><strong> Hipertexto (Hypertext):</strong> Este término se refiere a texto, generalmente en forma de enlaces, que
         se encuentra
-        organizado de manera que establece conexiones entre elementos relacionados..</li>
+        organizado de manera que establece conexiones entre elementos relacionados.</li>
       <li><strong> Marcado (Markup):</strong>
         Se trata de una pauta de estilo que se utiliza para representar elementos que serán visualizados en el navegador
         de manera gráfica.</li>
@@ -41,33 +51,100 @@
       Una de las principales funciones de HTML radica en atribuir significado al texto, un concepto conocido como
       semántica, lo que capacita al navegador para presentar el contenido de manera adecuada. Una ventaja considerable de
       utilizar etiquetas semánticamente correctas radica en que los motores de búsqueda web (web crawlers) pueden indexar
-      con facilidad las páginas y los sitios web, lo que conlleva una mejora en el SEO (Optimización de Motores de
+      con facilidad las páginas y los sitios web, lo que conlleva una mejora en el
+      <strong> SEO</strong>
+      (Optimización de Motores de
       Búsqueda)
     </p>
     <p>
-      HTML5 representa la versión más reciente de este lenguaje de programación, lanzada en octubre de 2014 por el
-      consorcio W3C. Esta actualización moderniza el lenguaje reemplazando etiquetas obsoletas por versiones actualizadas
+      <strong> HTML 5 </strong>
+      representa la versión más reciente de este lenguaje de programación, lanzada en octubre de 2014 por el
+      consorcio
+      <strong> W3C. </strong>
+      Esta actualización moderniza el lenguaje reemplazando etiquetas obsoletas por versiones actualizadas
       y aprovechando las últimas tecnologías y demandas web, como formularios, visualizadores, manejo de grandes conjuntos
       de datos, entre otros
     </p>
     <p>
-      En resumen, HTML, o Lenguaje de Marcado de Hipertexto, es el pilar fundamental de la World Wide Web. Su capacidad
+      En resumen, HTML, o Lenguaje de Marcado de Hipertexto, es el pilar fundamental de la <strong> World Wide Web.ƒ
+      </strong>
+      Su capacidad
       para definir la estructura y el contenido de las páginas web mediante etiquetas y atributos es esencial para la
       creación y presentación de información en línea. Al utilizar etiquetas semánticamente correctas, HTML no solo
-    permite que los navegadores muestren el contenido de manera apropiada, sino que también mejora la indexación de las
-    páginas web por parte de los motores de búsqueda, lo que contribuye a un mejor rendimiento en términos de SEO.
-  </p>
-  <p>
-    La evolución constante de HTML, con HTML5 como su versión más reciente, garantiza que el lenguaje se mantenga al día
-    con las necesidades cambiantes de la web y aproveche las últimas tecnologías y funcionalidades. En última instancia,
-    HTML es el cimiento sobre el cual se construyen y desarrollan las experiencias en línea, permitiendo a los
-    diseñadores y desarrolladores web crear contenido interactivo y atractivo para los usuarios de todo el mundo
-  </p>
+      permite que los navegadores muestren el contenido de manera apropiada, sino que también mejora la indexación de las
+      páginas web por parte de los motores de búsqueda, lo que contribuye a un mejor rendimiento en términos de SEO.
+    </p>
+    <p>
+      La evolución constante de HTML, con HTML5 como su versión más reciente, garantiza que el lenguaje se mantenga al día
+      con las necesidades cambiantes de la web y aproveche las últimas tecnologías y funcionalidades. En última instancia,
+      HTML es el cimiento sobre el cual se construyen y desarrollan las experiencias en línea, permitiendo a los
+      diseñadores y desarrolladores web crear contenido interactivo y atractivo para los usuarios de todo el mundo.
+    </p>
 
 
-</div></template>
+  </div>
+</template>
 
-<style>@media (min-width: 1024px) {
+<style>
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./src/assets/tipografias/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+.informacion {
+  font-family: 'Montserrat';
+  text-align: justify;
+  line-height: 2;
+}
+
+.titulo__L {
+  color: var(--color-azul-rey);
+}
+
+
+
+.titulo__M {
+  color: var(--color-rosa-mexicano);
+}
+
+
+.titulo__N {
+  color: var(--color-naranja);
+}
+
+.titulo__O {
+  color: var(--color-azul-verde);
+}
+
+.titulo__S {
+  color: var(--color-verde);
+}
+
+/* Estilos para pantallas grandes (más de 1024px de ancho) */
+@media (min-width: 1025px) {
+  .informacion {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: large;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 768px y 1024px de ancho) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .informacion {
+    font-size: medium;
+  }
+}
+
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+  .informacion {
+    font-size: small;
+  }
+}
+
+@media (min-width: 1024px) {
   .informacion {
     min-height: 100vh;
     display: inline-block;
@@ -75,4 +152,5 @@
     font-size: large;
     font-family: sans-serif;
   }
-}</style>
+}
+</style>

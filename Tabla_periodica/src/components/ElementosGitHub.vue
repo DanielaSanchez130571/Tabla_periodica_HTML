@@ -2,8 +2,6 @@
 import { ref, onMounted } from 'vue';
 import { Modal } from 'bootstrap'; // Importa el módulo Modal de Bootstrap
 
-
-
 export default {
     setup() {
         const posts = ref([]);
@@ -38,7 +36,7 @@ export default {
 </script>
 
 <template>
-    <div class="app">
+    <div class="app container mb-5">
         <section class="grid-tabla section-tabla wrapper ">
             <div class="div-elemento" v-for="(post, index) in posts" :style="{ gridColumn: post.col, gridRow: post.row }"
                 :key="index">
@@ -63,19 +61,21 @@ export default {
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>Nombre: {{ post.nombre }}</p>
-                                <p>Tag:{{ post.tag }}</p>
+                                <p>Nombre: <strong> {{ post.nombre }} </strong>
+                                    </p>
+                                <p>Tag: {{ post.tag }}</p>
                                 <p>Grupo: {{ post.grupo }}</p>
                                 <div>
                                     <p> Ejemplo: </p>
                                     <p class="text-center">
-                                        <code style="color: black; font-weight: 600;" >
-                                                                {{ post.info.ejemplo }}
-                                                            </code>
-                                                            </p>
+                                        <code style="color: black; font-weight: 600;">
+                                                                    {{ post.info.ejemplo }}
+                                                                </code>
+                                    </p>
                                 </div>
-                                <p>Interfaz: {{ post.info.interfazDOM }}</p>
-                                <p>Referencia: <br>{{ post.info.URL }}</p>
+                                <p>Interfaz: <br> {{ post.info.interfazDOM }}</p>
+                                <p>Referencia: <br>
+                                     <a :href="post.info.URL" target="_blank">{{ post.info.URL }}</a></p>
                             </div>
                             <div class="modal-footer ">
                                 <button type="button" class="btn " data-bs-dismiss="modal"
@@ -231,18 +231,16 @@ export default {
     font-size: 10px;
 }
 
+
+
 .modal-elemento {
     text-align: justify;
     font-size: 14px;
+    max-width: 50%; /* Establece el ancho máximo al 100% del contenedor padre */
+    margin: 0 auto; 
 }
 
 /* Grid  */
-
-.section-tabla {
-    margin-left: 1%;
-    margin-right: 5%
-
-}
 
 .section-tabla {
     flex: 1;
@@ -367,7 +365,6 @@ export default {
 }
 
 /* Media Query para  mobil */
-
 @media screen and (max-width: 767px) {
     .grid-tabla {
         display: flex;
@@ -390,6 +387,37 @@ export default {
     .btn-elemento {
         width: 100%;
         height: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .grid-tabla {
+        grid-template-columns: repeat(18, 1fr);
+        /* Cambia el número de columnas según tu diseño */
+        grid-gap: 1;
+        /* Ajusta el espacio entre elementos según sea necesario */
+    }
+
+    .btn-elemento {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .element-number {
+        font-size: 6px;
+        color: var(--color-negro);
+    }
+
+    .nombre {
+        font-size: 10px;
+        font-weight: bold;
+        color: var(--color-negro);
+    }
+
+    .tag {
+        font-size: 10px;
     }
 }
 </style>

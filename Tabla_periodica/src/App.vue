@@ -16,10 +16,10 @@
     <body>
         <nav class="fondo-negro text-center">
             <div class="container-fluid">
-                <h1 class="titulo display-4 pt-3">TABLA PERIÓDICA</h1>
+                <h1 class="titulo display-4 pt-5">TABLA PERIÓDICA</h1>
             </div>
             <div class="container-fluid">
-                <h1 class="titulo display-4 pb-3">
+                <h1 class="titulo display-4 pb-2">
                     <span class="titulo__E">E</span>
                     <span class="titulo__L">L</span>
                     <span class="titulo__E_2">E</span>
@@ -31,27 +31,44 @@
                     <span class="titulo__S">S</span> HTML
                 </h1>
             </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav custom-nav">
+                        <!-- Ítem a la izquierda -->
+                        <li class="nav-item">
+                            <RouterLink to="/app" class="nav-link text-white">
+                                <h4>Tabla interactiva</h4>
+                            </RouterLink>
+                        </li>
+                        <li class="nav-item">
+                            <RouterLink to="/" class="nav-link text-white">
+                                <h4>Home</h4>
+                            </RouterLink>
+                        </li>
+                        <!-- Ítem a la derecha -->
+                        <li class="nav-item">
+                            <RouterLink to="/informacion" class="nav-link text-white co">
+                                <h4>¿Qué es HTML?</h4>
+                            </RouterLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </nav>
 
+        <RouterView />
 
-            
 
-        <div class="wrapper container">
-            <RouterLink to="/"></RouterLink>
-            <RouterLink to="/informacion">
-                <h3>¿Qué es HTML?</h3>
-            </RouterLink>
-            <RouterLink to="/app">
-                <h3>Tabla interactiva</h3>
-            </RouterLink>
-            
-            <RouterView />
-        </div>
 
-        <footer class="text-center py-4 div-footer text-white">
+
+        <footer class="text-center py-4 mt-5 div-footer text-white">
             <div class="container">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item texto-footer"><a href="#" class="px-2 link-footer">About us</a></li>
+                    <li class="nav-item texto-footer">
+                        <RouterLink to="/us" class="nav-link text-white">
+                                about us
+                            </RouterLink>
+                    </li>
                 </ul>
                 <p class="text-center ">© 2023 Kuepa, TechPower - México | Equipo 4</p>
             </div>
@@ -100,8 +117,6 @@ body {
 }
 
 /* Navbar */
-
-
 .titulo {
     color: var(--color-blanco);
     text-align: center;
@@ -150,6 +165,16 @@ body {
     color: var(--color-verde);
 }
 
+.custom-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.custom-nav .nav-item {
+    flex: 1;
+}
+
 /* Footer */
 .div-footer {
     background-color: var(--color-negro);
@@ -163,227 +188,30 @@ body {
 
 .link-footer {
     text-decoration: none;
-    /* Elimina la decoración de subrayado */
     color: inherit;
-    /* Hereda el color del texto del elemento padre (en este caso, blanco) */
+}
 
-    /* Interactiviada */
+/* Querys */
 
-    .element input[type="radio"] {
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        cursor: pointer;
-        outline: none;
-    }
+@media (min-width: 992px) {
+  .titulo.display-4 {
+    font-size: 2.5rem;
+  }
 
-    .element input[type="radio"].activate:hover~.square {
-        z-index: 2;
-        transform: scale(1.35);
-        transition-delay: 0ms;
-        outline: none;
-        pointer-events: none;
-    }
+  /* Agrega más ajustes de estilo para pantallas grandes aquí */
+}
 
-    .element input[type="radio"].activate:checked+input[type="radio"].deactivate {
-        z-index: 3;
-        pointer-events: all;
-    }
+@media (max-width: 991px) {
+  .titulo.display-4 {
+    font-size: 2rem;
+  }
 
-    .element input[type="radio"].activate:checked~.overlay {
-        opacity: 0.75;
-    }
+  /* Agrega más ajustes de estilo para pantallas medianas aquí */
+}
 
-    .element input[type="radio"].activate:checked {
-        z-index: 3;
-        transform: scale(3);
-        transition-duration: 500ms, 0ms, 200ms, 200ms, 200ms, 200ms;
-        transition-delay: 0ms;
-        outline: none;
-        cursor: auto;
-    }
-
-    .element input[type="radio"].activate:checked~.label {
-        transition-duration: 500ms;
-        transform: scale(0.75);
-    }
-
-    .element input[type="radio"].activate:checked {
-        opacity: 1;
-        transition: 500ms;
-    }
-
-    .element input[type="radio"].activate:checked~ {
-        display: block;
-        animation: fade-in;
-        animation-duration: 1s;
-    }
-
-    .element input[type="radio"].activate:checked~ {
-        animation-name: rotate;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-
-    .element input[type="radio"].deactivate {
-        position: fixed;
-        display: block;
-        z-index: 1;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .element input[type="radio"].deactivate:checked~ {
-        z-index: 1;
-    }
-
-    .raw {
-        position: relative;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-
-    .key .raw label:hover {
-        opacity: 1 !important;
-    }
-
-    .raw label:hover {
-        opacity: 1 !important;
-    }
-
-    .categorias {
-        background-color: var(--color-gris);
-        padding: 10px;
-        border-radius: 10px;
-
-    }
-
-
-    .categorias {
-        background-color: var(--color-gris);
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    .docuemntoC:hover {
-        background-color: var(--color-azul-claro);
-    }
-
-    .metadatoC:hover {
-        background-color: var(--color-azul-rey);
-    }
-
-    .listaC:hover {
-        background-color: var(--color-rosa-morado);
-    }
-
-    .agrupacionC:hover {
-        background-color: var(--color-fucsia);
-    }
-
-    .textualC:hover {
-        background-color: var(--color-rosa-mexicano);
-    }
-
-    .multimedicaC:hover {
-        background-color: var(--color-salmon);
-    }
-
-    .tablaC:hover {
-        background-color: var(--color-naranja);
-    }
-
-    .formularioC:hover {
-        background-color: var(--color-verde-limon);
-    }
-
-    .scriptingC:hover {
-        background-color: var(--color-verde);
-    }
-
-    .interactivaC:hover {
-        background-color: var(--color-azul-verde);
-    }
-
-    .semanticaC:hover {
-        background-color: var(--color-amarillo-naranja);
-    }
-
-    .ideograficaC:hover {
-        background-color: var(--color-marron);
-    }
-
-    .edicionC:hover {
-        background-color: var(--color-nude);
-    }
-
-    .obsoletaC:hover {
-        background-color: var(--color-morado-nude);
-    }
-
-
-
-
-    #documentosC:checked~.periodic-table .element:not(.documentoC),
-    #documentosC:checked~.periodic-table .placeholder,
-    #metadatosC:checked~.periodic-table .element:not(.metadatoC),
-    #metadatosC:checked~.periodic-table .placeholder,
-    #listasC:checked~.periodic-table .element:not(.listaC),
-    #listasC:checked~.periodic-table .placeholder,
-    #agrupacionesC:checked~.periodic-table .element:not(.agrupacionC),
-    #agrupacionesC:checked~.periodic-table .placeholder,
-    #textualesC:checked~.periodic-table .element:not(.textualC),
-    #textualesC:checked~.periodic-table .placeholder,
-    #multimedicasC:checked~.periodic-table .element:not(.multimedicaC),
-    #multimedicasC:checked~.periodic-table .placeholder,
-    #tablasC:checked~.periodic-table .element:not(.tablaC),
-    #tablasC:checked~.periodic-table .placeholder,
-    #formulariosC:checked~.periodic-table .element:not(.formularioC),
-    #formulariosC:checked~.periodic-table .placeholder,
-    #scriptingsC:checked~.periodic-table .element:not(.scriptingC),
-    #scriptingsC:checked~.periodic-table .placeholder,
-    #interactivasC:checked~.periodic-table .element:not(.interactivaC),
-    #interactivasC:checked~.periodic-table .placeholder,
-    #semanticasC:checked~.periodic-table .element:not(.semanticaC),
-    #semanticasC:checked~.periodic-table .placeholder,
-    #ideograficasC:checked~.periodic-table .element:not(.ideograficaC),
-    #ideograficasC:checked~.periodic-table .placeholder,
-    #edicionesC:checked~.periodic-table .element:not(.edicioneC),
-    #edicionesC:checked~.periodic-table .placeholder,
-    #obsoletasC:checked~.periodic-table .element:not(.obsoletaC),
-    #obsoletasC:checked~.periodic-table .placeholder {
-        opacity: 0.15;
-        pointer-events: none;
-    }
-
-
-    #documentosC:checked~.periodic-table .key label:not(.documentoC),
-    #metadatosC:checked~.periodic-table .key label:not(.metadatoC),
-    #listasC:checked~.periodic-table .key label:not(.listaC),
-    #agrupacionesC:checked~.periodic-table .key label:not(.agrupacionC),
-    #textualesC:checked~.periodic-table .key label:not(.textualC),
-    #multimedicasC:checked~.periodic-table .key label:not(.multimedicaC),
-    #tablasC:checked~.periodic-table .key label:not(.tablaC),
-    #formulariosC:checked~.periodic-table .key label:not(.formularioC),
-    #scriptingsC:checked~.periodic-table .key label:not(.scriptingC),
-    #interactivasC:checked~.periodic-table .key label:not(.interactivaC),
-    #semanticasC:checked~.periodic-table .key label:not(.semanticaC),
-    #ideograficasC:checked~.periodic-table .key label:not(.ideograficaC),
-    #edicionesC:checked~.periodic-table .key label:not(.edicioneC),
-    #obsoletasC:checked~.periodic-table .key label:not(.obsoletaC) {
-        opacity: 0.65;
-    }
-
-    .categorias-t:checked~.categorias-cancel {
-        visibility: visible;
-        pointer-events: all;
-        cursor: pointer;
-    }
-
-}</style>
+@media (max-width: 767px) {
+  .titulo.display-4 {
+    font-size: 1.5rem;
+  }
+}
+</style>
