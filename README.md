@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tabla Periodica de Elementos de HTLM
 ----
 ### ******** En desarrollo ********
@@ -15,3 +16,10 @@ https://www.figma.com/file/CT0iQ2YJitLQJZKH5jddpC/Tabla-de-etiquetas-HTML?type=d
 
 ---
 2023 | Kuepa 
+=======
+# Tabla_periodica_HTML
+Integrantes:
+Daniela Heredia (https://github.com/DanHT22)
+Daniela M. Sánchez (https://github.com/DanielaSanchez130571)
+Florinda Hernandez (https://github.com/florhde)Re
+>>>>>>> prueba2
