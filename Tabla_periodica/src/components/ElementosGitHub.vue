@@ -87,6 +87,22 @@ export default {
             </div>
         </section>
     </div>
+    <div class="container div-categorias">
+        <label class="docuemntoC categorias" for="documentosC">Documento</label>
+            <label class="metadatoC categorias" for="metadatosC">Metadatos</label>
+            <label class="listaC categorias" for="listasC">Listas</label>
+            <label class="agrupacionC categorias" for="agrupacionesC">Agrupación</label>
+            <label class="textualC categorias" for="textualesC">Textual</label>
+            <label class="multimedicaC categorias" for="multimedicasC">Multimedia</label>
+            <label class="tablaC categorias" for="tablasC">Tablas</label>
+            <label class="formularioC categorias" for="formulariosC">Formulario</label>
+            <label class="scriptingC categorias" for="scriptingsC">Scripting</label>
+            <label class="interactivaC categorias" for="interactivasC">Interactivas</label>
+            <label class="semanticaC categorias" for="semanticasC">Semánticas</label>
+            <label class="ideograficaC categorias" for="ideograficasC">Ideográficas</label>
+            <label class="edicionC categorias" for="edicionesC">Edición</label>
+            <label class="obsoletaC categorias" for="obsoletasC">Obsoletas</label>
+    </div>
 </template>
 
 <style>
@@ -111,7 +127,6 @@ export default {
 }
 
 /* Elemento */
-
 .btn-elemento {
     width: 60px;
     height: 60px;
@@ -140,7 +155,12 @@ export default {
 }
 
 /* Grupos */
-
+.div-categorias{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .documentoC {
     background-color: var(--color-azul-claro);
     border-color: var(--color-azul-claro);
@@ -224,6 +244,57 @@ export default {
     background-color: var(--color-morado-nude);
     border-color: var(--color-morado-nude);
     border-radius: 10px;
+}
+
+.categorias{
+    background-color: var(--color-gris);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+/* label categorias hover */
+.docuemntoC:hover{
+    background-color: var(--color-azul-claro);
+}
+.metadatoC:hover{
+    background-color: var(--color-azul-rey);
+}
+.listaC:hover{
+    background-color: var(--color-rosa-morado);
+}
+.agrupacionC:hover{
+    background-color: var(--color-fucsia);
+}
+.textualC:hover{
+    background-color: var(--color-rosa-mexicano);
+}
+.multimedicaC:hover{
+    background-color: var(--color-salmon);
+}
+.tablaC:hover{
+    background-color: var(--color-naranja);
+}
+.formularioC:hover{
+    background-color: var(--color-verde-limon);
+}
+.scriptingC:hover{
+    background-color: var(--color-verde);
+}
+.interactivaC:hover{
+    background-color: var(--color-azul-verde);
+}
+.semanticaC:hover{
+    background-color: var(--color-amarillo-naranja);
+}
+.ideograficaC:hover{
+    background-color: var(--color-marron);
+}
+.edicionC:hover{
+    background-color: var(--color-nude);
+}
+.obsoletaC:hover{
+    background-color: var(--color-morado-nude);
 }
 
 /* Modal */
